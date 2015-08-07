@@ -15,7 +15,7 @@ Tuesday | Thursday
 9/15: Basic Model Evaluation | 9/17: Linear Regression
 9/22: **First Project Presentation** | 9/24: Logistic Regression
 9/29: Advanced Model Evaluation | 10/1: Naive Bayes and Text Data
-10/6: Natural Language Processing | 10/8: Kaggle Competition<br>**Draft Paper Due**
+10/6: Natural Language Processing | 10/8: Kaggle Competition, **Draft Paper Due**
 10/13: Decision Trees | 10/15: Ensembling
 10/20: Regularization and<br>Clustering, **Peer Review Due** | 10/22: Course Review
 10/27: **Final Project Presentation** | 10/29: **Final Project Presentation**
@@ -38,15 +38,16 @@ Tuesday | Thursday
 * [Google's Python Class](https://developers.google.com/edu/python/): Slightly more advanced, including hours of useful lecture videos and downloadable exercises (with solutions).
 * [A Crash Course in Python for Scientists](http://nbviewer.ipython.org/gist/rpmuller/5920182): Read through the Overview section for a quick introduction to Python.
 * [Python for Informatics](http://www.pythonlearn.com/book.php): A very beginner-oriented book, with associated [slides](https://drive.google.com/folderview?id=0B7X1ycQalUnyal9yeUx3VW81VDg&usp=sharing) and [videos](https://www.youtube.com/playlist?list=PLlRFEj9H3Oj4JXIwMwN1_ss1Tk8wZShEJ).
-* [Intermediate workshop code](code/00_python_intermediate_workshop.py): Useful for review and reference.
 * [Python Quick Reference Guide](https://github.com/justmarkham/python-reference/blob/master/reference.py): My beginner-oriented guide that demonstrates Python concepts through short, well-commented examples.
 * [Python Tutor](http://pythontutor.com/): Allows you to visualize the execution of Python code.
 
+### Submission Forms
+* [Feedback form](http://bit.ly/dat8feedback)
+* [Homework and project submissions](http://bit.ly/dat8homework)
+
 <!--
 
-### Submission Forms
-* [Feedback form](http://bit.ly/dat7feedback)
-* [Homework and project submissions](http://bit.ly/dat7homework)
+* [Intermediate workshop code](code/00_python_intermediate_workshop.py): Useful for review and reference.
 
 -----
 
