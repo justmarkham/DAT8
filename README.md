@@ -27,7 +27,7 @@ Tuesday | Thursday
 * Install the [Anaconda distribution](http://continuum.io/downloads) of Python 2.7x.
     * If you choose not to use Anaconda, here is a list of the [Python packages](other/python_packages.md) you will need to install during the course.
 * We would like to check the setup of your laptop before the course begins:
-    * You can have your laptop checked before the intermediate Python workshop on Tuesday 8/11 (5:30pm-6:30pm), the weekend before the course begins (time and place TBA), or before class on Tuesday 8/18 (5:30pm-6:30pm).
+    * You can have your laptop checked before the intermediate Python workshop on Tuesday 8/11 (5:30pm-6:30pm), at the [15th & K Starbucks](http://www.yelp.com/biz/starbucks-washington-15) on Saturday 8/15 (1pm-3pm), or before class on Tuesday 8/18 (5:30pm-6:30pm).
     * Alternatively, you can walk through the [setup checklist](other/setup_checklist.md) yourself.
 * Once you receive an email invitation from Slack, join our "DAT8 team" and add your photo.
 * Practice Python using the resources below.
