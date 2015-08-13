@@ -1,4 +1,8 @@
 '''
+Python Intermediate Workshop
+'''
+
+'''
 LISTS
 '''
 
@@ -55,13 +59,13 @@ len(a)      # returns 5 (number of characters)
 
 '''
 EXERCISE:
-Create a list of the first names of your family members.
-Print the name of the last person in the list.
-Print the length of the name of the first person in the list.
-Change one of the names from their real name to their nickname.
-Append a new person to the list.
-Change the name of the new person to lowercase using the string method 'lower'.
-Sort the list in reverse alphabetical order.
+1. Create a list of the first names of your family members.
+2. Print the name of the last person in the list.
+3. Print the length of the name of the first person in the list.
+4. Change one of the names from their real name to their nickname.
+5. Append a new person to the list.
+6. Change the name of the new person to lowercase using the string method 'lower'.
+7. Sort the list in reverse alphabetical order.
 Bonus: Sort the list by the length of the names (shortest to longest).
 '''
 
@@ -166,10 +170,10 @@ family.items()      # returns list of tuples:
 
 '''
 EXERCISE:
-Print the name of the mom.
-Change the size to 5.
-Add 'Maggie' to the list of kids.
-Fix 'bart' and 'lisa' so that the first letter is capitalized.
+1. Print the name of the mom.
+2. Change the size to 5.
+3. Add 'Maggie' to the list of kids.
+4. Fix 'bart' and 'lisa' so that the first letter is capitalized.
 Bonus: Do this last step using a list comprehension.
 '''
 
