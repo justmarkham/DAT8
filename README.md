@@ -39,15 +39,12 @@ Tuesday | Thursday
 * [A Crash Course in Python for Scientists](http://nbviewer.ipython.org/gist/rpmuller/5920182): Read through the Overview section for a quick introduction to Python.
 * [Python for Informatics](http://www.pythonlearn.com/book.php): A very beginner-oriented book, with associated [slides](https://drive.google.com/folderview?id=0B7X1ycQalUnyal9yeUx3VW81VDg&usp=sharing) and [videos](https://www.youtube.com/playlist?list=PLlRFEj9H3Oj4JXIwMwN1_ss1Tk8wZShEJ).
 * [Python Quick Reference Guide](https://github.com/justmarkham/python-reference/blob/master/reference.py): My beginner-oriented guide that demonstrates Python concepts through short, well-commented examples.
+* [Beginner](code/00_python_beginner_workshop.py) and [intermediate](code/00_python_intermediate_workshop.py) workshop code: Useful for review and reference.
 * [Python Tutor](http://pythontutor.com/): Allows you to visualize the execution of Python code.
 
 ### Submission Forms
 * [Feedback form](http://bit.ly/dat8feedback)
 * [Homework and project submissions](http://bit.ly/dat8homework)
-
-<!--
-
-* [Intermediate workshop code](code/00_python_intermediate_workshop.py): Useful for review and reference.
 
 -----
 
@@ -55,14 +52,15 @@ Tuesday | Thursday
 * Welcome from General Assembly staff
 * Course overview ([slides](slides/01_course_overview.pdf))
 * Introduction to data science ([slides](slides/01_intro_to_data_science.pdf))
-* Discuss the [course project](project/README.md)
+* Discuss the course project: [requirements](project/README.md) and [example projects](https://github.com/justmarkham/DAT-project-examples)
 * Types of data ([slides](slides/01_types_of_data.pdf)) and [public data sources](project/public_data.md)
 * Wrap up: Slack tour, submission forms
 
 **Homework:**
-* Work through GA's friendly [command line tutorial](http://generalassembly.github.io/prework/command-line/#/) using Terminal (Linux/Mac) or Git Bash (Windows), and then browse through this [command line reference](code/02_command_line.md).
+* Work through GA's friendly [command line tutorial](http://generalassembly.github.io/prework/command-line/#/) using Terminal (Linux/Mac) or Git Bash (Windows).
+* Read through this [command line reference](code/02_command_line.md), and complete the pre-class exercise at the bottom. (There's nothing you need to submit once you're done.)
 * Watch videos 1 through 8 (21 minutes) of [Introduction to Git and GitHub](https://www.youtube.com/playlist?list=PL5-da3qGB5IBLMp7LtN8Nc3Efd4hJq0kD).
-* If your laptop has any setup issues, please work with us to resolve them by Wednesday.
+* If your laptop has any setup issues, please work with us to resolve them by Thursday.
 
 **Resources:**
 * For a useful look at the different types of data scientists, read [Analyzing the Analyzers](http://cdn.oreillystatic.com/oreilly/radarreport/0636920029014/Analyzing_the_Analyzers.pdf) (32 pages).
@@ -73,19 +71,22 @@ Tuesday | Thursday
 -----
 
 ### Class 2: Command Line and Version Control
-* Command line exercise ([code](code/02_command_line.md))
-* Git and GitHub ([slides](slides/02_git_github.pdf))
+* Review the command line pre-class exercise ([code](code/02_command_line.md))
+* Git and GitHub (slides)
 * Intermediate command line
 * Wrap up: Course schedule, office hours
 
 **Homework:**
-* Complete the homework exercise listed in the [command line introduction](code/02_command_line.md#homework-exercise). Create a Markdown document that includes your answers and the code you used to arrive at those answers. Add this file to a GitHub repo that you'll use for all of your coursework, and submit a link to your repo using the homework submission form.
-* Review the code from the [beginner](code/00_python_beginner_workshop.py) and [intermediate](code/00_python_intermediate_workshop.py) Python workshops. If you don't feel comfortable with any of the content (up through the "dictionaries" section), you should spend some time this weekend practicing Python. Here are my recommended resources:
+* Complete the homework exercise listed in the [command line introduction](code/02_command_line.md#homework-exercise):
+    * Create a Markdown file that includes your answers and the code you used to arrive at those answers.
+    * Add this file to a GitHub repo that you'll use for all of your coursework.
+    * Submit a link to your repo using the homework submission form.
+* Review the code from the [beginner](code/00_python_beginner_workshop.py) and [intermediate](code/00_python_intermediate_workshop.py) Python workshops. If you don't feel comfortable with any of the content (excluding the "requests" and "APIs" sections), you should spend some time this weekend practicing Python:
     * If you like learning from a book, [Python for Informatics](http://www.pythonlearn.com/html-270/) has useful chapters on strings, lists, and dictionaries.
     * If you prefer interactive exercises, try these lessons from [Codecademy](http://www.codecademy.com/en/tracks/python): "Python Lists and Dictionaries" and "A Day at the Supermarket".
-    * If you have more time, try these much longer lessons from [DataQuest](https://dataquest.io/missions): "Find the US city with the lowest crime rate" and "Discover weather patterns in LA".
-    * If you've already mastered these topics and want more of a challenge, try solving the second [Python Challenge](http://www.pythonchallenge.com/) and send me your code in Slack.
-* If there are specific Python topics you want me to cover next week, send me a Slack message.
+    * If you have more time, try missions 2 and 3 from [DataQuest's Learning Python](https://www.dataquest.io/course/learning-python) course.
+    * If you've already mastered these topics and want more of a challenge, try solving [Python Challenge](http://www.pythonchallenge.com/) number 1 (decoding a message) and send me your code in Slack.
+* To help you think about your own project, watch [What is machine learning, and how does it work?](https://www.youtube.com/watch?v=elojMnjn4kk) (10 minutes) and browse through some more [example student projects](https://github.com/justmarkham/DAT-project-examples).
 
 **Git and Markdown Resources:**
 * [Pro Git](http://git-scm.com/book/en/v2) is an excellent book for learning Git. Read the first two chapters to gain a deeper understanding of version control and basic commands.
@@ -97,6 +98,8 @@ Tuesday | Thursday
 **Command Line Resources:**
 * If you want to go much deeper into the command line, [Data Science at the Command Line](http://shop.oreilly.com/product/0636920032823.do) is a great book. The [companion website](http://datascienceatthecommandline.com/) provides installation instructions for a "data science toolbox" (a virtual machine with many more command line tools), as well as a long reference guide to popular command line tools.
 * If you want to do more at the command line with CSV files, try out [csvkit](http://csvkit.readthedocs.org/), which can be installed via `pip`.
+
+<!--
 
 -----
 
