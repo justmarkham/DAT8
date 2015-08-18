@@ -49,18 +49,18 @@ Tuesday | Thursday
 -----
 
 ### Class 1: Introduction to Data Science
-* Welcome from General Assembly staff
 * Course overview ([slides](slides/01_course_overview.pdf))
 * Introduction to data science ([slides](slides/01_intro_to_data_science.pdf))
 * Discuss the course project: [requirements](project/README.md) and [example projects](https://github.com/justmarkham/DAT-project-examples)
 * Types of data ([slides](slides/01_types_of_data.pdf)) and [public data sources](project/public_data.md)
+* Welcome from General Assembly staff
 * Wrap up: Slack tour, submission forms
 
 **Homework:**
 * Work through GA's friendly [command line tutorial](http://generalassembly.github.io/prework/command-line/#/) using Terminal (Linux/Mac) or Git Bash (Windows).
 * Read through this [command line reference](code/02_command_line.md), and complete the pre-class exercise at the bottom. (There's nothing you need to submit once you're done.)
-* Watch videos 1 through 8 (21 minutes) of [Introduction to Git and GitHub](https://www.youtube.com/playlist?list=PL5-da3qGB5IBLMp7LtN8Nc3Efd4hJq0kD).
-* If your laptop has any setup issues, please work with us to resolve them by Thursday.
+* Watch videos 1 through 8 (21 minutes) of [Introduction to Git and GitHub](https://www.youtube.com/playlist?list=PL5-da3qGB5IBLMp7LtN8Nc3Efd4hJq0kD), or read sections 1.1 through 2.2 of [Pro Git](http://git-scm.com/book/en/v2).
+* If your laptop has any setup issues, please work with us to resolve them by Thursday. If your laptop has not yet been checked, you should come early on Thursday, or just walk through the [setup checklist](other/setup_checklist.md) yourself (and let us know you have done so).
 
 **Resources:**
 * For a useful look at the different types of data scientists, read [Analyzing the Analyzers](http://cdn.oreillystatic.com/oreilly/radarreport/0636920029014/Analyzing_the_Analyzers.pdf) (32 pages).
