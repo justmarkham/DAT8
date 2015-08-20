@@ -78,10 +78,7 @@ Tuesday | Thursday
 * Wrap up: Course schedule, office hours
 
 **Homework:**
-* Complete the homework exercise listed in the [command line introduction](code/02_command_line.md#homework-exercise):
-    * Create a Markdown file that includes your answers and the code you used to arrive at those answers.
-    * Add this file to a GitHub repo that you'll use for all of your coursework.
-    * Submit a link to your repo using the homework submission form.
+* Complete the [command line homework assignment](homework/02_command_line_chipotle.md) with the Chipotle data.
 * Review the code from the [beginner](code/00_python_beginner_workshop.py) and [intermediate](code/00_python_intermediate_workshop.py) Python workshops. If you don't feel comfortable with any of the content (excluding the "requests" and "APIs" sections), you should spend some time this weekend practicing Python:
     * [Introduction to Python](http://introtopython.org/) does a great job explaining Python essentials and includes tons of example code.
     * If you like learning from a book, [Python for Informatics](http://www.pythonlearn.com/html-270/) has useful chapters on strings, lists, and dictionaries.
