@@ -131,7 +131,7 @@ An **absolute file path** specifies the complete path to a file, ignoring your c
     * Use `.` for the `<path>` to refer to the working directory.
 * `grep <pattern>` does a **g**lobal search (of your entire computer) for matches
     * Hit `Ctrl + c` if you want to cancel the search.
-* Much more complex string-matching patterns can be used (which we will cover in a future class).
+* Much more complex string-matching patterns can be used.
 
 ##### `|`
 * `<command 1> | <command 2>` pipes the results from `<command 1>` into `<command 2>`, and then the results of `<command 2>` are printed to the console
@@ -170,13 +170,4 @@ An **absolute file path** specifies the complete path to a file, ignoring your c
 7. Count the approximate number of occurrences of the word 'dictionary' (regardless of case) across all files in the DAT8 repo.
 8. **Optional:** Use the the command line to discover something "interesting" about the Chipotle data. The advanced commands above may be helpful to you!
 
-
-### Homework solution
-1. `order_id` is the unique identifier for each order. `quantity` is the number purchased of a particular item. `item_name` is the primary name for the item being purchased. `choice_description` is list of modifiers for that item. `price` is the price for that entire line (taking `quantity` into account). A given order consists of one or more rows, depending upon the number of unique items being purchased in that order.
-2. 1834 orders (since 1834 is the highest order_id number)
-3. 4623 lines: `wc -l chipotle.tsv`
-4. chicken is more popular: compare `grep -i 'chicken burrito' chipotle.tsv | wc -l` with `grep -i 'steak burrito' chipotle.tsv | wc -l`
-5. black beans are more popular: compare `grep -i 'chicken burrito' chipotle.tsv | grep -i 'black beans' | wc -l` with `grep -i 'chicken burrito' chipotle.tsv | grep -i 'pinto beans' | wc -l`
-6. `find . -name *.?sv` will find CSV or TSV files.
-7. `grep -ir 'dictionary' . | wc -l` will count the number of lines in which the word 'dictionary' appears, which is a good approximation of the number of occurrences.
 -->
