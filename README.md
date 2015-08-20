@@ -17,8 +17,8 @@ Tuesday | Thursday
 9/29: Advanced Model Evaluation | 10/1: Naive Bayes and Text Data
 10/6: Natural Language Processing | 10/8: Kaggle Competition, **Draft Paper Due**
 10/13: Decision Trees | 10/15: Ensembling
-10/20: Regularization and<br>Clustering, **Peer Review Due** | 10/22: Course Review
-10/27: **Final Project Presentation** | 10/29: **Final Project Presentation**
+10/20: Regularization and<br>Clustering, **Peer Review Due** | 10/22: Course Review and Bonus Topics
+10/27: Bonus Topics and<br>**Final Project Presentation** | 10/29: **Final Project Presentation**
 
 ### Before the Course Begins
 * Install [Git](http://git-scm.com/downloads).
