@@ -75,7 +75,6 @@ Tuesday | Thursday
 * Review the command line pre-class exercise ([code](code/02_command_line.md))
 * Git and GitHub ([slides](slides/02_git_github.pdf))
 * Intermediate command line
-* Wrap up: Course schedule, office hours
 
 **Homework:**
 * Complete the [command line homework assignment](homework/02_command_line_chipotle.md) with the Chipotle data.
@@ -100,25 +99,28 @@ Tuesday | Thursday
 * If you want to go much deeper into the command line, [Data Science at the Command Line](http://shop.oreilly.com/product/0636920032823.do) is a great book. The [companion website](http://datascienceatthecommandline.com/) provides installation instructions for a "data science toolbox" (a virtual machine with many more command line tools), as well as a long reference guide to popular command line tools.
 * If you want to do more at the command line with CSV files, try out [csvkit](http://csvkit.readthedocs.org/), which can be installed via `pip`.
 
-<!--
-
 -----
 
 ### Class 3: Data Reading and Cleaning
 * Git and GitHub assorted tips ([slides](slides/02_git_github.pdf))
-* Review command line homework ([solution](code/02_command_line.md#homework-solution))
+* Review command line homework
 * Python:
     * Spyder interface
-    * Review of list comprehensions
+    * Looping exercise
     * Lesson on file reading with airline safety data ([code](code/03_file_reading.py), [data](data/airlines.csv), [article](http://fivethirtyeight.com/features/should-travelers-avoid-flying-airlines-that-have-had-crashes-in-the-past/))
     * Data cleaning exercise
-    * Walkthrough of homework with Chipotle order data ([code](code/03_python_homework_chipotle.py), [data](data/chipotle.tsv), [article](http://www.nytimes.com/interactive/2015/02/17/upshot/what-do-people-actually-order-at-chipotle.html))
+    * Walkthrough of Python homework with Chipotle data ([code](code/03_python_homework_chipotle.py), [data](data/chipotle.tsv), [article](http://www.nytimes.com/interactive/2015/02/17/upshot/what-do-people-actually-order-at-chipotle.html))
 
 **Homework:**
-* Complete the [homework assignment](code/03_python_homework_chipotle.py) with the [Chipotle data](data/chipotle.tsv), and add a commented Python script to your GitHub repo. If you are unable to complete a part, try writing some pseudocode instead! You have until Monday to complete this assignment.
+* Complete the [Python homework assignment](code/03_python_homework_chipotle.py) with the Chipotle data, add a commented Python script to your GitHub repo, and submit a link using the homework submission form. You have until Tuesday (9/1) to complete this assignment.
 
 **Resources:**
+* [Want to understand Python's comprehensions? Think in Excel or SQL](http://blog.lerner.co.il/want-to-understand-pythons-comprehensions-think-like-an-accountant/) may be helpful if you are still confused by list comprehensions.
+* [My code isn't working](http://www.tecoed.co.uk/uploads/1/4/2/4/14249012/624506_orig.png) is a great flowchart explaining how to debug Python errors.
 * [PEP 8](https://www.python.org/dev/peps/pep-0008/) is Python's "classic" style guide, and is worth a read if you want to write readable code that is consistent with the rest of the Python community.
+* If you want to understand Python at a deeper level, Ned Batchelder's [Loop Like A Native](http://nedbatchelder.com/text/iter.html) and [Python Names and Values](http://nedbatchelder.com/text/names1.html) are excellent presentations.
+
+<!--
 
 -----
 
