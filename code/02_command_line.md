@@ -92,7 +92,6 @@ An **absolute file path** specifies the complete path to a file, ignoring your c
 * Viewing this [collapsible tree diagram](../other/02_file_tree.png) may help you to visualize the directory structure that we have created.
 
 
-<!--
 ### Intermediate commands
 
 ##### `head`
@@ -158,5 +157,3 @@ An **absolute file path** specifies the complete path to a file, ignoring your c
 * `uniq <filename>` discards all but one of the successive identical lines (thus it only keeps **uniq**ue lines)
 * `uniq -c <filename>` also records the **c**ount of the number of occurrences
 * Because lines must be successive to be counted as identical, you will usually use `sort` before `uniq`.
-
--->
