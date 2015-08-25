@@ -103,7 +103,7 @@ Tuesday | Thursday
 
 ### Class 3: Data Reading and Cleaning
 * Git and GitHub assorted tips ([slides](slides/02_git_github.pdf))
-* Review command line homework (solution)
+* Review command line homework ([solution](homework/02_command_line_chipotle.md))
 * Python:
     * Spyder interface
     * Looping exercise
@@ -156,6 +156,7 @@ Tuesday | Thursday
 * If you want to go really deep into Pandas (and NumPy), read the book [Python for Data Analysis](http://shop.oreilly.com/product/0636920023784.do), written by the creator of Pandas.
 * This notebook demonstrates the different types of [joins in Pandas](http://nbviewer.ipython.org/github/justmarkham/DAT8/blob/master/notebooks/05_pandas_merge.ipynb), for when you need to figure out how to merge two DataFrames.
 * This is a nice, short tutorial on [pivot tables](https://beta.oreilly.com/learning/pivot-tables) in Pandas.
+* For working with geospatial data in Python, [GeoPandas](http://geopandas.org/index.html) looks promising. This [tutorial](http://michelleful.github.io/code-blog/2015/04/24/sgmap/) uses GeoPandas (and scikit-learn) to build a "linguistic street map" of Singapore.
 
 **Visualization Resources:**
 * Watch [Look at Your Data](https://www.youtube.com/watch?v=coNDCIMH8bk) (18 minutes) for an excellent example of why visualization is useful for understanding your data.
