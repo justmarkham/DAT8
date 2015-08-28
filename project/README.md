@@ -48,6 +48,13 @@ Create a GitHub repository for your project. It should include a **short write-u
 * What do you know about the data so far?
 * Why did you choose this topic?
 
+##### Characteristics of a good project question
+
+* Clearly defined: The question can easily be summarized in a single statement ("Can we predict A based on B?").
+* As simple as possible: The question has a narrow focus rather than broad goals.
+* Reasonably available data: The question depends on data that is likely to be available in a "meaningful" quantity.
+* Reasonable hypothesis: The question examines factors (B) that might actually be predictive of the outcome (A).
+
 ### September 22: First project presentation
 
 You'll be giving a short presentation to the class about the work you have done so far, as well as your plans for the project going forward. Your presentation should use slides (or a similar format). Your **slides, code, data, and visualizations** should be included in your GitHub repository. Here are some questions that you should address in your presentation:
