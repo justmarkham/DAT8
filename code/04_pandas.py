@@ -64,23 +64,41 @@ EXERCISE ONE
 '''
 
 # read drinks.csv into a DataFrame called 'drinks'
+drinks = pd.read_table('drinks.csv', sep=',')
+drinks = pd.read_csv('drinks.csv')              # assumes separator is comma
 
 # print the head and the tail
+drinks.head()
+drinks.tail()
 
 # examine the default index, data types, and shape
+drinks.index
+drinks.dtypes
+drinks.shape
 
 # print the 'beer_servings' Series
+drinks['beer_servings']
+drinks.beer_servings
 
 # calculate the mean 'beer_servings' for the entire dataset
+drinks.describe()                   # summarize all numeric columns
+drinks.beer_servings.describe()     # summarize only the 'beer_servings' Series
+drinks.beer_servings.mean()         # only calculate the mean
 
 # count the number of occurrences of each 'continent' value and see if it looks correct
+drinks.continent.value_counts()
 
 # BONUS: display only the number of rows of the 'users' DataFrame
+users.shape[0]
 
 # BONUS: display the 3 most frequent occupations in 'users'
+users.occupation.value_counts().head(3)
+users.occupation.value_counts()[:3]
 
 # BONUS: create the 'users' DataFrame from the u.user_original file (which lacks a header row)
 # Hint: read the pandas.read_table documentation
+user_cols = ['user_id', 'age', 'gender', 'occupation', 'zip_code']
+users = pd.read_table('u.user_original', sep='|', header=None, names=user_cols, index_col='user_id')
 
 '''
 Filtering and Sorting
@@ -107,17 +125,23 @@ EXERCISE TWO
 '''
 
 # filter 'drinks' to only include European countries
+drinks[drinks.continent=='EU']
 
 # filter 'drinks' to only include European countries with wine_servings > 300
+drinks[(drinks.continent=='EU') & (drinks.wine_servings > 300)]
 
 # calculate the mean 'beer_servings' for all of Europe
+drinks[drinks.continent=='EU'].beer_servings.mean()
 
 # determine which 10 countries have the highest total_litres_of_pure_alcohol
+drinks.sort('total_litres_of_pure_alcohol').tail(10)
 
 # BONUS: sort 'users' by 'occupation' and then by 'age' (in a single command)
+users.sort(['occupation', 'age'])
 
 # BONUS: filter 'users' to only include doctors and lawyers without using a |
 # Hint: read the pandas.Series.isin documentation
+users[users.occupation.isin(['doctor', 'lawyer'])]
 
 '''
 Renaming, Adding, and Removing Columns
