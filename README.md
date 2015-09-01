@@ -150,7 +150,7 @@ Tuesday | Thursday
 **Homework:**
 * Your project question write-up is due on Thursday.
 * Complete the [Pandas homework assignment](code/05_pandas_homework_imdb.py) with the [IMDb data](data/imdb_1000.csv). You have until Tuesday (9/8) to complete this assignment.
-* If you're not using Anaconda, install the [IPython Notebook](http://ipython.org/install.html) using `pip`. (The IPython Notebook is included with Anaconda.)
+* If you're not using Anaconda, install the [Jupyter Notebook](http://jupyter.readthedocs.org/en/latest/install.html) (formerly known as the IPython Notebook) using `pip`. (The Jupyter or IPython Notebook is included with Anaconda.)
 
 **Pandas Resources:**
 * To learn more Pandas, read this [three-part tutorial](http://www.gregreda.com/2013/10/26/intro-to-pandas-data-structures/), or review these two excellent (but extremely long) notebooks on Pandas: [introduction](http://nbviewer.ipython.org/github/fonnesbeck/Bios8366/blob/master/notebooks/Section2_5-Introduction-to-Pandas.ipynb) and [data wrangling](http://nbviewer.ipython.org/github/fonnesbeck/Bios8366/blob/master/notebooks/Section2_6-Data-Wrangling-with-Pandas.ipynb).
@@ -172,7 +172,7 @@ Tuesday | Thursday
 
 ### Class 6: Machine Learning
 * Part 2 of Visualization with Pandas and Matplotlib ([code](code/05_pandas_visualization.py))
-* Brief introduction to the IPython Notebook
+* Brief introduction to the Jupyter/IPython Notebook
 * Human learning exercise:
     * [Iris dataset](http://archive.ics.uci.edu/ml/datasets/Iris) hosted by the UCI Machine Learning Repository
     * [Iris photo](http://sebastianraschka.com/Images/2014_python_lda/iris_petal_sepal.png)
@@ -238,9 +238,9 @@ Tuesday | Thursday
 * Reproducibility
     * Discuss assigned readings: [introduction](http://www.dataschool.io/reproducibility-is-not-just-for-researchers/), [Colbert Report video](http://thecolbertreport.cc.com/videos/dcyvro/austerity-s-spreadsheet-error), [cabs article](http://iquantny.tumblr.com/post/107245431809/how-software-in-half-of-nyc-cabs-generates-5-2), [Tweet](https://twitter.com/jakevdp/status/519563939177197571), [creating a reproducible analysis](https://github.com/jtleek/datasharing)
     * Examples: [Classic rock](https://github.com/fivethirtyeight/data/tree/master/classic-rock), [student project 1](https://github.com/jwknobloch/DAT4_final_project), [student project 2](https://github.com/justmarkham/DAT4-students/tree/master/Jonathan_Bryan/Project_Files)
-* K-nearest neighbors and scikit-learn ([notebook](http://nbviewer.ipython.org/github/justmarkham/DAT7/blob/master/notebooks/08_knn_sklearn.ipynb), notebook code)
+* K-nearest neighbors and scikit-learn ([notebook](http://nbviewer.ipython.org/github/justmarkham/DAT8/blob/master/notebooks/08_knn_sklearn.ipynb), notebook code)
     * Exercise with NBA player data ([data](https://github.com/justmarkham/DAT4-students/blob/master/kerry/Final/NBA_players_2015.csv), [data dictionary](https://github.com/justmarkham/DAT-project-examples/blob/master/pdf/nba_paper.pdf), notebook, notebook code)
-* Exploring the bias-variance tradeoff ([notebook](http://nbviewer.ipython.org/github/justmarkham/DAT7/blob/master/notebooks/08_bias_variance.ipynb), notebook code)
+* Exploring the bias-variance tradeoff ([notebook](http://nbviewer.ipython.org/github/justmarkham/DAT8/blob/master/notebooks/08_bias_variance.ipynb), notebook code)
 
 **Homework:**
 * Reading assignment on the [bias-variance tradeoff](homework/09_bias_variance.md)
