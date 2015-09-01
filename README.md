@@ -49,6 +49,8 @@ Tuesday | Thursday
 * [Feedback form](http://bit.ly/dat8feedback)
 * [Homework and project submissions](http://bit.ly/dat8homework)
 
+### [Comparison of machine learning models](other/model_comparison.md)
+
 -----
 
 ### Class 1: Introduction to Data Science
@@ -143,7 +145,7 @@ Tuesday | Thursday
 -----
 
 ### Class 5: Visualization
-* Python homework with the Chipotle data due (solution, detailed explanation)
+* Python homework with the Chipotle data due ([solution](code/03_python_homework_chipotle.py), [detailed explanation](http://nbviewer.ipython.org/github/justmarkham/DAT8/blob/master/notebooks/03_python_homework_chipotle_explained.ipynb))
 * Part 2 of Exploratory Data Analysis with Pandas ([code](code/04_pandas.py))
 * Visualization with Pandas and Matplotlib ([code](code/05_pandas_visualization.py))
 
