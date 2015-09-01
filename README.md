@@ -49,7 +49,9 @@ Tuesday | Thursday
 * [Feedback form](http://bit.ly/dat8feedback)
 * [Homework and project submissions](http://bit.ly/dat8homework)
 
+<!--
 ### [Comparison of machine learning models](other/model_comparison.md)
+-->
 
 -----
 
