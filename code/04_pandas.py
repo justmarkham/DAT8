@@ -210,30 +210,44 @@ EXERCISE THREE
 '''
 
 # read ufo.csv into a DataFrame called 'ufo'
+ufo = pd.read_table('ufo.csv', sep=',')
+ufo = pd.read_csv('ufo.csv')
 
 # check the shape of the DataFrame
+ufo.shape
 
 # calculate the most frequent value for each of the columns (in a single command)
+ufo.describe()
 
 # what are the four most frequent colors reported?
+ufo['Colors Reported'].value_counts().head(4)
 
 # for reports in VA, what's the most frequent city?
+ufo[ufo.State=='VA'].City.value_counts().head(1)
 
 # show only the UFO reports from Arlington, VA
+ufo[(ufo.City=='Arlington') & (ufo.State=='VA')]
 
 # count the number of missing values in each column
+ufo.isnull().sum()
 
 # show only the UFO reports in which the City is missing
+ufo[ufo.City.isnull()]
 
 # how many rows remain if you drop all rows with any missing values?
+ufo.dropna().shape[0]
 
 # replace any spaces in the column names with an underscore
+ufo.rename(columns={'Colors Reported':'Colors_Reported', 'Shape Reported':'Shape_Reported'}, inplace=True)
 
 # BONUS: redo the task above, writing generic code to replace spaces with underscores
 # In other words, your code should not reference the specific column names
+ufo.columns = [col.replace(' ', '_') for col in ufo.columns]
+ufo.columns = ufo.columns.str.replace(' ', '_')
 
 # BONUS: create a new column called 'Location' that includes both City and State
 # For example, the 'Location' for the first row would be 'Ithaca, NY'
+ufo['Location'] = ufo.City + ', ' + ufo.State
 
 '''
 Split-Apply-Combine
@@ -263,12 +277,16 @@ EXERCISE FOUR
 '''
 
 # for each occupation in 'users', count the number of occurrences
+users.occupation.value_counts()
 
 # for each occupation, calculate the mean age
+users.groupby('occupation').age.mean()
 
 # BONUS: for each occupation, calculate the minimum and maximum ages
+users.groupby('occupation').age.agg(['min', 'max'])
 
 # BONUS: for each combination of occupation and gender, calculate the mean age
+users.groupby(['occupation', 'gender']).age.mean()
 
 '''
 Selecting Multiple Columns and Filtering Rows
