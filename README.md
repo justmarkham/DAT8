@@ -180,11 +180,12 @@ Tuesday | Thursday
 * Human learning exercise:
     * [Iris dataset](http://archive.ics.uci.edu/ml/datasets/Iris) hosted by the UCI Machine Learning Repository
     * [Iris photo](http://sebastianraschka.com/Images/2014_python_lda/iris_petal_sepal.png)
-    * Solution (notebook, notebook code)
+    * [Notebook](http://nbviewer.ipython.org/github/justmarkham/DAT8/blob/master/notebooks/06_human_learning_iris.ipynb)
 * Introduction to machine learning ([slides](slides/06_machine_learning.pdf))
 * Machine learning exercise ([article](http://blog.dominodatalab.com/10-interesting-uses-of-data-science/))
 
 **Homework:**
+* **Optional:** Complete the bonus exercise listed in the [human learning notebook](http://nbviewer.ipython.org/github/justmarkham/DAT8/blob/master/notebooks/06_human_learning_iris.ipynb). It will take the place of any one homework you miss, past or future! This is due on Tuesday (9/8).
 * If you're not using Anaconda, install [requests](http://www.python-requests.org/en/latest/user/install/) and [Beautiful Soup 4](http://www.crummy.com/software/BeautifulSoup/bs4/doc/#installing-beautiful-soup) using `pip`. (Both of these packages are included with Anaconda.)
 
 **Machine Learning Resources:**
