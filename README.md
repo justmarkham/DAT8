@@ -49,9 +49,7 @@ Tuesday | Thursday
 * [Feedback form](http://bit.ly/dat8feedback)
 * [Homework and project submissions](http://bit.ly/dat8homework)
 
-<!--
 ### [Comparison of machine learning models](other/model_comparison.md)
--->
 
 -----
 
@@ -149,7 +147,7 @@ Tuesday | Thursday
 ### Class 5: Visualization
 * Python homework with the Chipotle data due ([solution](code/03_python_homework_chipotle.py), [detailed explanation](http://nbviewer.ipython.org/github/justmarkham/DAT8/blob/master/notebooks/03_python_homework_chipotle_explained.ipynb))
 * Part 2 of Exploratory Data Analysis with Pandas ([code](code/04_pandas.py))
-* Visualization with Pandas and Matplotlib ([code](code/05_pandas_visualization.py))
+* Visualization with Pandas and Matplotlib ([code](code/05_pandas_visualization.py), [notebook](http://nbviewer.ipython.org/github/justmarkham/DAT8/blob/master/notebooks/05_pandas_visualization.ipynb))
 
 **Homework:**
 * Your project question write-up is due on Thursday.
@@ -177,12 +175,11 @@ Tuesday | Thursday
 ### Class 6: Machine Learning
 * Part 2 of Visualization with Pandas and Matplotlib ([code](code/05_pandas_visualization.py))
 * Brief introduction to the Jupyter/IPython Notebook
-* Human learning exercise:
+* "Human learning" exercise:
     * [Iris dataset](http://archive.ics.uci.edu/ml/datasets/Iris) hosted by the UCI Machine Learning Repository
     * [Iris photo](http://sebastianraschka.com/Images/2014_python_lda/iris_petal_sepal.png)
     * [Notebook](http://nbviewer.ipython.org/github/justmarkham/DAT8/blob/master/notebooks/06_human_learning_iris.ipynb)
 * Introduction to machine learning ([slides](slides/06_machine_learning.pdf))
-* Machine learning exercise ([article](http://blog.dominodatalab.com/10-interesting-uses-of-data-science/))
 
 **Homework:**
 * **Optional:** Complete the bonus exercise listed in the [human learning notebook](http://nbviewer.ipython.org/github/justmarkham/DAT8/blob/master/notebooks/06_human_learning_iris.ipynb). It will take the place of any one homework you miss, past or future! This is due on Tuesday (9/8).
@@ -203,12 +200,11 @@ Tuesday | Thursday
 * If you would like to learn the IPython Notebook, the official [Notebook tutorials](http://nbviewer.ipython.org/github/ipython/ipython/blob/master/examples/Notebook/Index.ipynb) are useful.
 * This [Reddit discussion](https://www.reddit.com/r/Python/comments/3be5z2/do_you_prefer_ipython_notebook_over_ipython/) compares the relative strengths of the IPython Notebook and Spyder.
 
-<!--
-
 -----
 
 ### Class 7: Getting Data
 * Pandas homework with the IMDb data due (solution)
+* Optional "human learning" exercise with the iris data due (solution)
 * APIs ([code](code/07_api.py))
     * [OMDb API](http://www.omdbapi.com/)
 * Web scraping ([code](code/07_web_scraping.py))
@@ -239,9 +235,9 @@ Tuesday | Thursday
 -----
 
 ### Class 8: K-Nearest Neighbors
-* K-nearest neighbors and scikit-learn ([notebook](http://nbviewer.ipython.org/github/justmarkham/DAT8/blob/master/notebooks/08_knn_sklearn.ipynb), notebook code)
-* Exercise with NBA player data ([data](https://github.com/justmarkham/DAT4-students/blob/master/kerry/Final/NBA_players_2015.csv), [data dictionary](https://github.com/justmarkham/DAT-project-examples/blob/master/pdf/nba_paper.pdf), [notebook](http://nbviewer.ipython.org/github/justmarkham/DAT8/blob/master/notebooks/08_nba_knn.ipynb), notebook code)
-* Exploring the bias-variance tradeoff ([notebook](http://nbviewer.ipython.org/github/justmarkham/DAT8/blob/master/notebooks/08_bias_variance.ipynb), notebook code)
+* K-nearest neighbors and scikit-learn ([notebook](http://nbviewer.ipython.org/github/justmarkham/DAT8/blob/master/notebooks/08_knn_sklearn.ipynb))
+* Exercise with NBA player data ([notebook](http://nbviewer.ipython.org/github/justmarkham/DAT8/blob/master/notebooks/08_nba_knn.ipynb), [data](https://github.com/justmarkham/DAT4-students/blob/master/kerry/Final/NBA_players_2015.csv), [data dictionary](https://github.com/justmarkham/DAT-project-examples/blob/master/pdf/nba_paper.pdf))
+* Exploring the bias-variance tradeoff ([notebook](http://nbviewer.ipython.org/github/justmarkham/DAT8/blob/master/notebooks/08_bias_variance.ipynb))
 
 **Homework:**
 * Reading assignment on the [bias-variance tradeoff](homework/09_bias_variance.md)
@@ -261,6 +257,7 @@ Tuesday | Thursday
 * [Data visualization with Seaborn](https://beta.oreilly.com/learning/data-visualization-with-seaborn) is a quick tour of some of the popular types of Seaborn plots.
 * [Visualizing Google Forms Data with Seaborn](http://pbpython.com/pandas-google-forms-part2.html) and [How to Create NBA Shot Charts in Python](http://savvastjortjoglou.com/nba-shot-sharts.html) are both good examples of Seaborn usage on real-world data.
 
+<!--
 
 -----
 
@@ -270,7 +267,7 @@ Tuesday | Thursday
     * Discuss assigned readings: [introduction](http://www.dataschool.io/reproducibility-is-not-just-for-researchers/), [Colbert Report video](http://thecolbertreport.cc.com/videos/dcyvro/austerity-s-spreadsheet-error), [cabs article](http://iquantny.tumblr.com/post/107245431809/how-software-in-half-of-nyc-cabs-generates-5-2), [Tweet](https://twitter.com/jakevdp/status/519563939177197571), [creating a reproducible analysis](https://github.com/jtleek/datasharing)
     * Examples: [Classic rock](https://github.com/fivethirtyeight/data/tree/master/classic-rock), [student project 1](https://github.com/jwknobloch/DAT4_final_project), [student project 2](https://github.com/justmarkham/DAT4-students/tree/master/Jonathan_Bryan/Project_Files)
 * Discuss the reading assignment on the [bias-variance tradeoff](homework/09_bias_variance.md)
-* Model evaluation using train/test split ([notebook](http://nbviewer.ipython.org/github/justmarkham/DAT8/blob/master/notebooks/09_model_evaluation.ipynb), notebook code)
+* Model evaluation using train/test split ([notebook](http://nbviewer.ipython.org/github/justmarkham/DAT8/blob/master/notebooks/09_model_evaluation.ipynb))
 
 **Homework:**
 * If you're brand new to linear regression, read [What is Linear Regression?](http://blog.yhathq.com/posts/what-is-linear-regression.html) and watch [The Easiest Introduction to Regression Analysis](https://www.youtube.com/watch?v=k_OB1tWX9PM) (14 minutes).
