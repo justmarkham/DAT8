@@ -173,7 +173,7 @@ Tuesday | Thursday
 -----
 
 ### Class 6: Machine Learning
-* Part 2 of Visualization with Pandas and Matplotlib ([code](code/05_pandas_visualization.py))
+* Part 2 of Visualization with Pandas and Matplotlib ([code](code/05_pandas_visualization.py), [notebook](http://nbviewer.ipython.org/github/justmarkham/DAT8/blob/master/notebooks/05_pandas_visualization.ipynb))
 * Brief introduction to the Jupyter/IPython Notebook
 * "Human learning" exercise:
     * [Iris dataset](http://archive.ics.uci.edu/ml/datasets/Iris) hosted by the UCI Machine Learning Repository
@@ -242,7 +242,6 @@ Tuesday | Thursday
 **Homework:**
 * Reading assignment on the [bias-variance tradeoff](homework/09_bias_variance.md)
 * Read Kevin's [introduction to reproducibility](http://www.dataschool.io/reproducibility-is-not-just-for-researchers/), read Jeff Leek's [guide to creating a reproducible analysis](https://github.com/jtleek/datasharing), and watch this related [Colbert Report video](http://thecolbertreport.cc.com/videos/dcyvro/austerity-s-spreadsheet-error) (8 minutes).
-* Browse through the scikit-learn documentation for KNN to get a sense of how it's organized: [user guide](http://scikit-learn.org/stable/modules/neighbors.html), [module reference](http://scikit-learn.org/stable/modules/classes.html#module-sklearn.neighbors), [class documentation](http://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsClassifier.html)
 * Work on your project... your first project presentation is in less than two weeks!
 
 **KNN Resources:**
@@ -268,6 +267,7 @@ Tuesday | Thursday
     * Examples: [Classic rock](https://github.com/fivethirtyeight/data/tree/master/classic-rock), [student project 1](https://github.com/jwknobloch/DAT4_final_project), [student project 2](https://github.com/justmarkham/DAT4-students/tree/master/Jonathan_Bryan/Project_Files)
 * Discuss the reading assignment on the [bias-variance tradeoff](homework/09_bias_variance.md)
 * Model evaluation using train/test split ([notebook](http://nbviewer.ipython.org/github/justmarkham/DAT8/blob/master/notebooks/09_model_evaluation.ipynb))
+* Exploring the scikit-learn documentation: [module reference](http://scikit-learn.org/stable/modules/classes.html), [user guide](http://scikit-learn.org/stable/user_guide.html), class and function documentation
 
 **Homework:**
 * If you're brand new to linear regression, read [What is Linear Regression?](http://blog.yhathq.com/posts/what-is-linear-regression.html) and watch [The Easiest Introduction to Regression Analysis](https://www.youtube.com/watch?v=k_OB1tWX9PM) (14 minutes).
