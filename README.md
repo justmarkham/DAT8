@@ -203,8 +203,8 @@ Tuesday | Thursday
 -----
 
 ### Class 7: Getting Data
-* Pandas homework with the IMDb data due (solution)
-* Optional "human learning" exercise with the iris data due (solution)
+* Pandas homework with the IMDb data due ([solution](code/05_pandas_homework_imdb.py))
+* Optional "human learning" exercise with the iris data due ([solution](http://nbviewer.ipython.org/github/justmarkham/DAT8/blob/master/notebooks/06_human_learning_iris.ipynb))
 * APIs ([code](code/07_api.py))
     * [OMDb API](http://www.omdbapi.com/)
 * Web scraping ([code](code/07_web_scraping.py))
