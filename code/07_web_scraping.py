@@ -63,6 +63,7 @@ for tag in results:
 # limit search by Tag attribute
 b.find(name='p', attrs={'id':'scraping'})
 b.find_all(name='p', attrs={'class':'topic'})
+b.find_all(attrs={'class':'topic'})
 
 # limit search to specific sections
 b.find_all(name='li')
@@ -138,7 +139,7 @@ First, define a function that accepts an IMDb ID and returns a dictionary of
 movie information: title, star_rating, description, content_rating, duration.
 The function should gather this information by scraping the IMDb website, not
 by calling the OMDb API. (This is really just a wrapper of the web scraping
-code we wrote above)
+code we wrote above.)
 
 For example, get_movie_info('tt0111161') should return:
 
