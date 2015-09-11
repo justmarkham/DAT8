@@ -70,11 +70,11 @@ You'll be giving a short presentation to the class about the work you have done 
 
 * Please submit a link to your repository (with slides) no later than 6pm on Tuesday. I'll be copying your slides to my computer before class begins. Please don't Slack your materials to me unless you are having problems with GitHub.
 * Everyone will be presenting from my computer, so your slides should be in a format that can be easily read on any computer (PDF, PowerPoint, Google Slides, IPython Notebook).
-* You will have exactly 6 minutes to present, followed by 1 minute of questions.
+* You will have exactly 5 minutes to present, followed by 1 minute of questions.
 * Make sure your project question is crystal clear to every person in the room in the first minute.
 * Tell your story in an engaging fashion. Come up with a story or example that will help the audience to relate to your topic.
 * It is critical that you practice delivering your presentation and time yourself.
-* If you find that your presentation is longer than 6 minutes, the solution is not to speak more quickly. Instead, focus your presentation around the most interesting aspects of your project.
+* If you find that your presentation is longer than 5 minutes, the solution is not to speak more quickly. Instead, focus your presentation around the most interesting aspects of your project.
 
 ##### Note on including your data
 
