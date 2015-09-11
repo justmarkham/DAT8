@@ -235,7 +235,7 @@ Tuesday | Thursday
 -----
 
 ### Class 8: K-Nearest Neighbors
-* Brief review of Pandas (notebook)
+* Brief review of Pandas ([notebook](http://nbviewer.ipython.org/github/justmarkham/DAT8/blob/master/notebooks/08_pandas_review.ipynb))
 * K-nearest neighbors and scikit-learn ([notebook](http://nbviewer.ipython.org/github/justmarkham/DAT8/blob/master/notebooks/08_knn_sklearn.ipynb))
 * Exercise with NBA player data ([notebook](http://nbviewer.ipython.org/github/justmarkham/DAT8/blob/master/notebooks/08_nba_knn.ipynb), [data](https://github.com/justmarkham/DAT4-students/blob/master/kerry/Final/NBA_players_2015.csv), [data dictionary](https://github.com/justmarkham/DAT-project-examples/blob/master/pdf/nba_paper.pdf))
 * Exploring the bias-variance tradeoff ([notebook](http://nbviewer.ipython.org/github/justmarkham/DAT8/blob/master/notebooks/08_bias_variance.ipynb))
