@@ -22,4 +22,4 @@ This assignment uses a small subset of the data from Kaggle's [Yelp Business Rat
 7. **Bonus:** Think of some new features you could create from the existing data that might be predictive of the response. Figure out how to create those features in Pandas, add them to your model, and see if the RMSE improves.
 8. **Bonus:** Compare your best RMSE on the testing set with the RMSE for the "null model", which is the model that ignores all features and simply predicts the mean response value in the testing set.
 9. **Bonus:** Instead of treating this as a regression problem, treat it as a classification problem and see what testing accuracy you can achieve with KNN.
-10. **Bonus:** Figure out how to use linear regression for classification, and compare its classification accuracy to KNN.
+10. **Bonus:** Figure out how to use linear regression for classification, and compare its classification accuracy with KNN's accuracy.

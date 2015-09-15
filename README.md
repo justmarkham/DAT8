@@ -286,7 +286,7 @@ Tuesday | Thursday
 
 ### Class 10: Linear Regression
 * Machine learning exercise ([article](http://blog.dominodatalab.com/10-interesting-uses-of-data-science/))
-* Linear regression
+* Linear regression ([notebook](http://nbviewer.ipython.org/github/justmarkham/DAT8/blob/master/notebooks/10_linear_regression.ipynb))
     * [Capital Bikeshare dataset](data/bikeshare.csv) used in a Kaggle competition
     * [Data dictionary](https://www.kaggle.com/c/bike-sharing-demand/data)
 * Feature engineering example: [Predicting User Engagement in Corporate Collaboration Network](http://nbviewer.ipython.org/github/mikeyea/DAT7_project/blob/master/final%20project/Class_Presention_MYea.ipynb)
@@ -330,12 +330,13 @@ Tuesday | Thursday
 ### Class 12: Logistic Regression
 * Yelp votes homework due (solution)
 * Logistic regression ([notebook](http://nbviewer.ipython.org/github/justmarkham/DAT8/blob/master/notebooks/12_logistic_regression.ipynb))
-* Exercise with Titanic data ([instructions](homework/12_titanic.md), [solution](code/12_titanic.py))
-* Confusion matrix ([slides](slides/12_confusion_matrix.pdf))
+    * [Glass identification dataset](https://archive.ics.uci.edu/ml/datasets/Glass+Identification)
+* Exercise with Titanic data ([notebook](http://nbviewer.ipython.org/github/justmarkham/DAT8/blob/master/notebooks/12_titanic_confusion.ipynb), [data](data/titanic.csv), [data dictionary](https://www.kaggle.com/c/titanic/data))
+* Confusion matrix ([slides](slides/12_confusion_matrix.pdf), [notebook](http://nbviewer.ipython.org/github/justmarkham/DAT8/blob/master/notebooks/12_titanic_confusion.ipynb))
 
 **Homework:**
 * If you aren't yet comfortable with all of the confusion matrix terminology, watch Rahul Patwari's videos on [Intuitive sensitivity and specificity](https://www.youtube.com/watch?v=U4_3fditnWg) (9 minutes) and [The tradeoff between sensitivity and specificity](https://www.youtube.com/watch?v=vtYDyGGeQyo) (13 minutes).
-* Video assignment on [ROC curves and AUC](homework/13_roc_auc.md)
+* Video/reading assignment on [ROC curves and AUC](homework/13_roc_auc.md)
 * Video/reading assignment on [cross-validation](homework/13_cross_validation.md)
 
 **Resources:**
