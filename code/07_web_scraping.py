@@ -155,8 +155,39 @@ a list in which each element is a dictionary of movie information.
 Finally, convert that list into a DataFrame.
 '''
 
+# define a function that accepts an IMDb ID and returns a dictionary of movie information
+def get_movie_info(imdb_id):
+    r = requests.get('http://www.imdb.com/title/' + imdb_id + '/')
+    b = BeautifulSoup(r.text)
+    info = {}
+    info['title'] = b.find(name='span', attrs={'class':'itemprop', 'itemprop':'name'}).text
+    info['star_rating'] = float(b.find(name='span', attrs={'itemprop':'ratingValue'}).text)
+    info['description'] = b.find(name='p', attrs={'itemprop':'description'}).text.strip()
+    info['content_rating'] = b.find(name='meta', attrs={'itemprop':'contentRating'})['content']
+    info['duration'] = int(b.find(name='time', attrs={'itemprop':'duration'}).text.strip()[:-4])
+    return info
 
+# test the function
+get_movie_info('tt0111161')
 
+# open the file of IDs (one ID per row), and store the IDs in a list
+imdb_ids = []
+with open('imdb_ids.txt', 'rU') as f:
+    imdb_ids = [row.strip() for row in f]
+
+# get the information for each movie, and store the results in a list
+from time import sleep
+movies = []
+for imdb_id in imdb_ids:
+    movies.append(get_movie_info(imdb_id))
+    sleep(1)
+
+# check that the list of IDs and list of movies are the same length
+assert(len(imdb_ids) == len(movies))
+
+# convert the list of movies into a DataFrame
+import pandas as pd
+pd.DataFrame(movies, index=imdb_ids)
 
 '''
 Another IMDb example: Getting the genres
