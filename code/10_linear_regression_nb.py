@@ -456,18 +456,24 @@ np.sqrt(metrics.mean_squared_error(y_test, y_null))
 
 # In[ ]:
 
-# create 4 dummy variables and show 5 random rows
-pd.get_dummies(bikes.season, prefix='season').sample(n=5, random_state=1)
+# create dummy variables
+season_dummies = pd.get_dummies(bikes.season, prefix='season')
+
+# print 5 random rows
+season_dummies.sample(n=5, random_state=1)
 
 
-# However, we actually only need **three dummy variables, not four**.
+# However, we actually only need **three dummy variables (not four)**, and thus we'll drop the first dummy variable.
 # 
 # Why? Because three dummies captures all of the "information" about the season feature, and implicitly defines spring (season 1) as the **baseline level:**
 
 # In[ ]:
 
-# create 4 dummy variables, then exclude the first
-pd.get_dummies(bikes.season, prefix='season').iloc[:, 1:].sample(n=5, random_state=1)
+# drop the first column
+season_dummies.drop(season_dummies.columns[0], axis=1, inplace=True)
+
+# print 5 random rows
+season_dummies.sample(n=5, random_state=1)
 
 
 # In general, if you have a categorical feature with **k possible values**, you create **k-1 dummy variables**.
@@ -476,16 +482,10 @@ pd.get_dummies(bikes.season, prefix='season').iloc[:, 1:].sample(n=5, random_sta
 
 # In[ ]:
 
-# create a DataFrame with the 3 dummy variable columns
-season_dummies = pd.get_dummies(bikes.season, prefix='season').iloc[:, 1:]
-
 # concatenate the original DataFrame and the dummy DataFrame (axis=0 means rows, axis=1 means columns)
 bikes = pd.concat([bikes, season_dummies], axis=1)
 
-
-# In[ ]:
-
-# show 5 random rows
+# print 5 random rows
 bikes.sample(n=5, random_state=1)
 
 
@@ -510,7 +510,7 @@ zip(feature_cols, linreg.coef_)
 # 
 # - No, it would simply change our **interpretation** of the coefficients.
 # 
-# **Note:** Dummy encoding is relevant for all machine learning models, not just linear regression models.
+# **Important:** Dummy encoding is relevant for all machine learning models, not just linear regression models.
 
 # In[ ]:
 
@@ -527,7 +527,7 @@ print train_test_rmse(['temp', 'season_2', 'season_3', 'season_4', 'humidity'])
 # - **hour:** as a categorical feature (use 23 dummy variables)
 # - **daytime:** as a single categorical feature (daytime=1 from 7am to 8pm, and daytime=0 otherwise)
 # 
-# Then, try using each of the three features with `train_test_rmse` to see which one performs the best!
+# Then, try using each of the three features (on its own) with `train_test_rmse` to see which one performs the best!
 
 # In[ ]:
 
@@ -538,7 +538,8 @@ bikes['hour'] = bikes.index.hour
 # In[ ]:
 
 # hour as a categorical feature
-hour_dummies = pd.get_dummies(bikes.hour, prefix='hour').iloc[:, 1:]
+hour_dummies = pd.get_dummies(bikes.hour, prefix='hour')
+hour_dummies.drop(hour_dummies.columns[0], axis=1, inplace=True)
 bikes = pd.concat([bikes, hour_dummies], axis=1)
 
 
