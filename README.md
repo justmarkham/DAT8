@@ -145,9 +145,9 @@ Tuesday | Thursday
 -----
 
 ### Class 5: Visualization
-* Python homework with the Chipotle data due ([solution](code/03_python_homework_chipotle.py), [detailed explanation](http://nbviewer.ipython.org/github/justmarkham/DAT8/blob/master/notebooks/03_python_homework_chipotle_explained.ipynb))
+* Python homework with the Chipotle data due ([solution](code/03_python_homework_chipotle.py), [detailed explanation](notebooks/03_python_homework_chipotle_explained.ipynb))
 * Part 2 of Exploratory Data Analysis with Pandas ([code](code/04_pandas.py))
-* Visualization with Pandas and Matplotlib ([code](code/05_pandas_visualization.py), [notebook](http://nbviewer.ipython.org/github/justmarkham/DAT8/blob/master/notebooks/05_pandas_visualization.ipynb))
+* Visualization with Pandas and Matplotlib ([code](code/05_pandas_visualization.py), [notebook](notebooks/05_pandas_visualization.ipynb))
 
 **Homework:**
 * Your project question write-up is due on Thursday.

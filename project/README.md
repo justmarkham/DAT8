@@ -23,7 +23,7 @@
     * [Final presentation](https://github.com/justmarkham/DAT-project-examples/blob/master/pdf/crime_presentation.pdf) by Debbie Yu
     * [Final presentation](https://github.com/justmarkham/DAT-project-examples/blob/master/pdf/dota_presentation.pdf) and [final paper](https://github.com/justmarkham/DAT-project-examples/blob/master/pdf/dota_paper.pdf) by Kyle Pomerleau
     * [Final paper](https://github.com/justmarkham/DAT-project-examples/blob/master/pdf/nba_paper.pdf) by Kerry Jones
-    * [Final paper](http://nbviewer.ipython.org/github/mikeyea/DAT7_project/blob/master/final%20project/Class%20Project.ipynb) by Mike Yea
+    * [Final paper](https://github.com/mikeyea/DAT7_project/blob/master/final%20project/Class%20Project.ipynb) by Mike Yea
 
 ## Overview
 

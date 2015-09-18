@@ -1,6 +1,6 @@
 ## Class 13 Pre-work: Cross-validation
 
-Watch my video on [cross-validation](https://www.youtube.com/watch?v=6dbrR-WymjI) (36 minutes), and be prepared to **discuss it in class** on Tuesday. The [notebook](http://nbviewer.ipython.org/github/justmarkham/DAT8/blob/master/notebooks/13_cross_validation.ipynb) shown in the video is also in this repository.
+Watch my video on [cross-validation](https://www.youtube.com/watch?v=6dbrR-WymjI) (36 minutes), and be prepared to **discuss it in class** on Tuesday. The [notebook](../notebooks/13_cross_validation.ipynb) shown in the video is also in this repository.
 
 Alternatively, read section 5.1 of [An Introduction to Statistical Learning](http://www-bcf.usc.edu/~gareth/ISL/) (11 pages).
 
