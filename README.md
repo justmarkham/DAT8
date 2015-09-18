@@ -88,7 +88,7 @@ Tuesday | Thursday
     * If you prefer interactive exercises, try these lessons from [Codecademy](http://www.codecademy.com/en/tracks/python): "Python Lists and Dictionaries" and "A Day at the Supermarket".
     * If you have more time, try missions 2 and 3 from [DataQuest's Learning Python](https://www.dataquest.io/course/learning-python) course.
     * If you've already mastered these topics and want more of a challenge, try solving [Python Challenge](http://www.pythonchallenge.com/) number 1 (decoding a message) and send me your code in Slack.
-* To give you a framework for thinking about your project, watch [What is machine learning, and how does it work?](https://www.youtube.com/watch?v=elojMnjn4kk) (10 minutes). (This is the [IPython notebook](http://nbviewer.ipython.org/github/justmarkham/scikit-learn-videos/blob/master/01_machine_learning_intro.ipynb) shown in the video.) Alternatively, read [A Visual Introduction to Machine Learning](http://www.r2d3.us/visual-intro-to-machine-learning-part-1/), which focuses on a specific machine learning model called decision trees.
+* To give you a framework for thinking about your project, watch [What is machine learning, and how does it work?](https://www.youtube.com/watch?v=elojMnjn4kk) (10 minutes). (This is the [IPython notebook](https://github.com/justmarkham/scikit-learn-videos/blob/master/01_machine_learning_intro.ipynb) shown in the video.) Alternatively, read [A Visual Introduction to Machine Learning](http://www.r2d3.us/visual-intro-to-machine-learning-part-1/), which focuses on a specific machine learning model called decision trees.
 * **Optional:** Browse through some more [example student projects](https://github.com/justmarkham/DAT-project-examples), which may help to inspire your own project!
 
 **Git and Markdown Resources:**
@@ -155,16 +155,16 @@ Tuesday | Thursday
 * If you're not using Anaconda, install the [Jupyter Notebook](http://jupyter.readthedocs.org/en/latest/install.html) (formerly known as the IPython Notebook) using `pip`. (The Jupyter or IPython Notebook is included with Anaconda.)
 
 **Pandas Resources:**
-* To learn more Pandas, read this [three-part tutorial](http://www.gregreda.com/2013/10/26/intro-to-pandas-data-structures/), or review these two excellent (but extremely long) notebooks on Pandas: [introduction](http://nbviewer.ipython.org/github/fonnesbeck/Bios8366/blob/master/notebooks/Section2_5-Introduction-to-Pandas.ipynb) and [data wrangling](http://nbviewer.ipython.org/github/fonnesbeck/Bios8366/blob/master/notebooks/Section2_6-Data-Wrangling-with-Pandas.ipynb).
+* To learn more Pandas, read this [three-part tutorial](http://www.gregreda.com/2013/10/26/intro-to-pandas-data-structures/), or review these two excellent (but extremely long) notebooks on Pandas: [introduction](https://github.com/fonnesbeck/Bios8366/blob/master/notebooks/Section2_5-Introduction-to-Pandas.ipynb) and [data wrangling](https://github.com/fonnesbeck/Bios8366/blob/master/notebooks/Section2_6-Data-Wrangling-with-Pandas.ipynb).
 * If you want to go really deep into Pandas (and NumPy), read the book [Python for Data Analysis](http://shop.oreilly.com/product/0636920023784.do), written by the creator of Pandas.
-* This notebook demonstrates the different types of [joins in Pandas](http://nbviewer.ipython.org/github/justmarkham/DAT8/blob/master/notebooks/05_pandas_merge.ipynb), for when you need to figure out how to merge two DataFrames.
+* This notebook demonstrates the different types of [joins in Pandas](notebooks/05_pandas_merge.ipynb), for when you need to figure out how to merge two DataFrames.
 * This is a nice, short tutorial on [pivot tables](https://beta.oreilly.com/learning/pivot-tables) in Pandas.
 * For working with geospatial data in Python, [GeoPandas](http://geopandas.org/index.html) looks promising. This [tutorial](http://michelleful.github.io/code-blog/2015/04/24/sgmap/) uses GeoPandas (and scikit-learn) to build a "linguistic street map" of Singapore.
 
 **Visualization Resources:**
 * Watch [Look at Your Data](https://www.youtube.com/watch?v=coNDCIMH8bk) (18 minutes) for an excellent example of why visualization is useful for understanding your data.
-* For more on Pandas plotting, read this [notebook](http://nbviewer.ipython.org/github/fonnesbeck/Bios8366/blob/master/notebooks/Section2_7-Plotting-with-Pandas.ipynb) or the [visualization page](http://pandas.pydata.org/pandas-docs/stable/visualization.html) from the official Pandas documentation.
-* To learn how to customize your plots further, browse through this [notebook on matplotlib](http://nbviewer.ipython.org/github/fonnesbeck/Bios8366/blob/master/notebooks/Section2_4-Matplotlib.ipynb) or this [similar notebook](http://nbviewer.ipython.org/github/jrjohansson/scientific-python-lectures/blob/master/Lecture-4-Matplotlib.ipynb).
+* For more on Pandas plotting, read this [notebook](https://github.com/fonnesbeck/Bios8366/blob/master/notebooks/Section2_7-Plotting-with-Pandas.ipynb) or the [visualization page](http://pandas.pydata.org/pandas-docs/stable/visualization.html) from the official Pandas documentation.
+* To learn how to customize your plots further, browse through this [notebook on matplotlib](https://github.com/fonnesbeck/Bios8366/blob/master/notebooks/Section2_4-Matplotlib.ipynb) or this [similar notebook](https://github.com/jrjohansson/scientific-python-lectures/blob/master/Lecture-4-Matplotlib.ipynb).
 * Read [Overview of Python Visualization Tools](http://pbpython.com/visualization-tools-1.html) for a useful comparison of Matplotlib, Pandas, Seaborn, ggplot, Bokeh, Pygal, and Plotly.
 * To explore different types of visualizations and when to use them, [Choosing a Good Chart](http://extremepresentation.typepad.com/files/choosing-a-good-chart-09.pdf) and [The Graphic Continuum](http://www.coolinfographics.com/storage/post-images/The-Graphic-Continuum-POSTER.jpg) are nice one-page references, and the interactive [R Graph Catalog](http://shiny.stat.ubc.ca/r-graph-catalog/) has handy filtering capabilities.
 * This [PowerPoint presentation](http://www2.research.att.com/~volinsky/DataMining/Columbia2011/Slides/Topic2-EDAViz.ppt) from Columbia's Data Mining class contains lots of good advice for properly using different types of visualizations.
@@ -173,20 +173,20 @@ Tuesday | Thursday
 -----
 
 ### Class 6: Machine Learning
-* Part 2 of Visualization with Pandas and Matplotlib ([code](code/05_pandas_visualization.py), [notebook](http://nbviewer.ipython.org/github/justmarkham/DAT8/blob/master/notebooks/05_pandas_visualization.ipynb))
+* Part 2 of Visualization with Pandas and Matplotlib ([code](code/05_pandas_visualization.py), [notebook](notebooks/05_pandas_visualization.ipynb))
 * Brief introduction to the Jupyter/IPython Notebook
 * "Human learning" exercise:
     * [Iris dataset](http://archive.ics.uci.edu/ml/datasets/Iris) hosted by the UCI Machine Learning Repository
     * [Iris photo](http://sebastianraschka.com/Images/2014_python_lda/iris_petal_sepal.png)
-    * [Notebook](http://nbviewer.ipython.org/github/justmarkham/DAT8/blob/master/notebooks/06_human_learning_iris.ipynb)
+    * [Notebook](notebooks/06_human_learning_iris.ipynb)
 * Introduction to machine learning ([slides](slides/06_machine_learning.pdf))
 
 **Homework:**
-* **Optional:** Complete the bonus exercise listed in the [human learning notebook](http://nbviewer.ipython.org/github/justmarkham/DAT8/blob/master/notebooks/06_human_learning_iris.ipynb). It will take the place of any one homework you miss, past or future! This is due on Tuesday (9/8).
+* **Optional:** Complete the bonus exercise listed in the [human learning notebook](notebooks/06_human_learning_iris.ipynb). It will take the place of any one homework you miss, past or future! This is due on Tuesday (9/8).
 * If you're not using Anaconda, install [requests](http://www.python-requests.org/en/latest/user/install/) and [Beautiful Soup 4](http://www.crummy.com/software/BeautifulSoup/bs4/doc/#installing-beautiful-soup) using `pip`. (Both of these packages are included with Anaconda.)
 
 **Machine Learning Resources:**
-* For a very quick summary of the key points about machine learning, watch [What is machine learning, and how does it work?](https://www.youtube.com/watch?v=elojMnjn4kk) (10 minutes) or read the [associated notebook](http://nbviewer.ipython.org/github/justmarkham/scikit-learn-videos/blob/master/01_machine_learning_intro.ipynb).
+* For a very quick summary of the key points about machine learning, watch [What is machine learning, and how does it work?](https://www.youtube.com/watch?v=elojMnjn4kk) (10 minutes) or read the [associated notebook](https://github.com/justmarkham/scikit-learn-videos/blob/master/01_machine_learning_intro.ipynb).
 * For a more in-depth introduction to machine learning, read section 2.1 (14 pages) of Hastie and Tibshirani's excellent book, [An Introduction to Statistical Learning](http://www-bcf.usc.edu/~gareth/ISL/). (It's a free PDF download!)
 * The [Learning Paradigms](http://work.caltech.edu/library/014.html) video (13 minutes) from [Caltech's Learning From Data course](http://work.caltech.edu/telecourse.html) provides a nice comparison of supervised versus unsupervised learning, as well as an introduction to "reinforcement learning".
 * [Real-World Active Learning](https://beta.oreilly.com/ideas/real-world-active-learning) is a readable and thorough introduction to "active learning", a variation of machine learning in which humans label only the most "important" observations.
@@ -196,15 +196,15 @@ Tuesday | Thursday
 * Look up the [characteristics of your zip code](http://www.esri.com/landing-pages/tapestry/), and then read about the [67 distinct segments](http://doc.arcgis.com/en/esri-demographics/data/tapestry-segmentation.htm) in detail.
 
 **IPython Notebook Resources:**
-* For a recap of the IPython Notebook introduction (and a preview of scikit-learn), watch [scikit-learn and the IPython Notebook](https://www.youtube.com/watch?v=IsXXlYVBt1M) (15 minutes) or read the [associated notebook](http://nbviewer.ipython.org/github/justmarkham/scikit-learn-videos/blob/master/02_machine_learning_setup.ipynb).
-* If you would like to learn the IPython Notebook, the official [Notebook tutorials](http://nbviewer.ipython.org/github/ipython/ipython/blob/master/examples/Notebook/Index.ipynb) are useful.
+* For a recap of the IPython Notebook introduction (and a preview of scikit-learn), watch [scikit-learn and the IPython Notebook](https://www.youtube.com/watch?v=IsXXlYVBt1M) (15 minutes) or read the [associated notebook](https://github.com/justmarkham/scikit-learn-videos/blob/master/02_machine_learning_setup.ipynb).
+* If you would like to learn the IPython Notebook, the official [Notebook tutorials](https://github.com/jupyter/notebook/blob/master/docs/source/examples/Notebook/Examples%20and%20Tutorials%20Index.ipynb) are useful.
 * This [Reddit discussion](https://www.reddit.com/r/Python/comments/3be5z2/do_you_prefer_ipython_notebook_over_ipython/) compares the relative strengths of the IPython Notebook and Spyder.
 
 -----
 
 ### Class 7: Getting Data
 * Pandas homework with the IMDb data due ([solution](code/05_pandas_homework_imdb.py))
-* Optional "human learning" exercise with the iris data due ([solution](http://nbviewer.ipython.org/github/justmarkham/DAT8/blob/master/notebooks/06_human_learning_iris.ipynb))
+* Optional "human learning" exercise with the iris data due ([solution](notebooks/06_human_learning_iris.ipynb))
 * APIs ([code](code/07_api.py))
     * [OMDb API](http://www.omdbapi.com/)
 * Web scraping ([code](code/07_web_scraping.py))
@@ -225,7 +225,7 @@ Tuesday | Thursday
 
 **Web Scraping Resources:**
 * The [Beautiful Soup documentation](http://www.crummy.com/software/BeautifulSoup/bs4/doc/) is incredibly thorough, but is hard to use as a reference guide. However, the section on [specifying a parser](http://www.crummy.com/software/BeautifulSoup/bs4/doc/#specifying-the-parser-to-use) may be helpful if Beautiful Soup appears to be parsing a page incorrectly.
-* For more Beautiful Soup examples and tutorials, see [Web Scraping 101 with Python](http://www.gregreda.com/2013/03/03/web-scraping-101-with-python/), a former DAT student's well-commented notebook on [scraping Craigslist](http://nbviewer.ipython.org/github/Alexjmsherman/DataScience_GeneralAssembly/blob/master/Final_Project/1.%20Final_Project_Data%20Scraping.ipynb), this [notebook](http://web.stanford.edu/~zlotnick/TextAsData/Web_Scraping_with_Beautiful_Soup.html) from Stanford's Text As Data course, and this [notebook](http://nbviewer.ipython.org/github/cs109/2014/blob/master/lectures/2014_09_23-lecture/data_scraping_transcript.ipynb) and associated [video](http://cm.dce.harvard.edu/2015/01/14328/L07/screen_H264LargeTalkingHead-16x9.shtml) from Harvard's Data Science course.
+* For more Beautiful Soup examples and tutorials, see [Web Scraping 101 with Python](http://www.gregreda.com/2013/03/03/web-scraping-101-with-python/), a former DAT student's well-commented notebook on [scraping Craigslist](https://github.com/Alexjmsherman/DataScience_GeneralAssembly/blob/master/Final_Project/1.%20Final_Project_Data%20Scraping.ipynb), this [notebook](http://web.stanford.edu/~zlotnick/TextAsData/Web_Scraping_with_Beautiful_Soup.html) from Stanford's Text As Data course, and this [notebook](https://github.com/cs109/2014/blob/master/lectures/2014_09_23-lecture/data_scraping_transcript.ipynb) and associated [video](http://cm.dce.harvard.edu/2015/01/14328/L07/screen_H264LargeTalkingHead-16x9.shtml) from Harvard's Data Science course.
 * For a much longer web scraping tutorial covering Beautiful Soup, lxml, XPath, and Selenium, watch [Web Scraping with Python](https://www.youtube.com/watch?v=p1iX0uxM1w8) (3 hours 23 minutes) from PyCon 2014. The [slides](https://docs.google.com/presentation/d/1uHM_esB13VuSf7O1ScGueisnrtu-6usGFD3fs4z5YCE/edit#slide=id.p) and [code](https://github.com/kjam/python-web-scraping-tutorial) are also available.
 * For more complex web scraping projects, [Scrapy](http://scrapy.org/) is a popular application framework that works with Python. It has excellent [documentation](http://doc.scrapy.org/en/1.0/index.html), and here's a [tutorial](https://github.com/rdempsey/ddl-data-wrangling) with detailed slides and code.
 * [robotstxt.org](http://www.robotstxt.org/robotstxt.html) has a concise explanation of how to write (and read) the `robots.txt` file.
@@ -235,10 +235,10 @@ Tuesday | Thursday
 -----
 
 ### Class 8: K-Nearest Neighbors
-* Brief review of Pandas ([notebook](http://nbviewer.ipython.org/github/justmarkham/DAT8/blob/master/notebooks/08_pandas_review.ipynb))
-* K-nearest neighbors and scikit-learn ([notebook](http://nbviewer.ipython.org/github/justmarkham/DAT8/blob/master/notebooks/08_knn_sklearn.ipynb))
-* Exercise with NBA player data ([notebook](http://nbviewer.ipython.org/github/justmarkham/DAT8/blob/master/notebooks/08_nba_knn.ipynb), [data](https://github.com/justmarkham/DAT4-students/blob/master/kerry/Final/NBA_players_2015.csv), [data dictionary](https://github.com/justmarkham/DAT-project-examples/blob/master/pdf/nba_paper.pdf))
-* Exploring the bias-variance tradeoff ([notebook](http://nbviewer.ipython.org/github/justmarkham/DAT8/blob/master/notebooks/08_bias_variance.ipynb))
+* Brief review of Pandas ([notebook](notebooks/08_pandas_review.ipynb))
+* K-nearest neighbors and scikit-learn ([notebook](notebooks/08_knn_sklearn.ipynb))
+* Exercise with NBA player data ([notebook](notebooks/08_nba_knn.ipynb), [data](https://github.com/justmarkham/DAT4-students/blob/master/kerry/Final/NBA_players_2015.csv), [data dictionary](https://github.com/justmarkham/DAT-project-examples/blob/master/pdf/nba_paper.pdf))
+* Exploring the bias-variance tradeoff ([notebook](notebooks/08_bias_variance.ipynb))
 
 **Homework:**
 * Reading assignment on the [bias-variance tradeoff](homework/09_bias_variance.md)
@@ -265,11 +265,11 @@ Tuesday | Thursday
     * Discuss assigned readings: [introduction](http://www.dataschool.io/reproducibility-is-not-just-for-researchers/), [Colbert Report video](http://thecolbertreport.cc.com/videos/dcyvro/austerity-s-spreadsheet-error), [cabs article](http://iquantny.tumblr.com/post/107245431809/how-software-in-half-of-nyc-cabs-generates-5-2), [Tweet](https://twitter.com/jakevdp/status/519563939177197571), [creating a reproducible analysis](https://github.com/jtleek/datasharing)
     * Examples: [Classic rock](https://github.com/fivethirtyeight/data/tree/master/classic-rock), [student project 1](https://github.com/jwknobloch/DAT4_final_project), [student project 2](https://github.com/justmarkham/DAT4-students/tree/master/Jonathan_Bryan/Project_Files)
 * Discuss the reading assignment on the [bias-variance tradeoff](homework/09_bias_variance.md)
-* Model evaluation using train/test split ([notebook](http://nbviewer.ipython.org/github/justmarkham/DAT8/blob/master/notebooks/09_model_evaluation.ipynb))
+* Model evaluation using train/test split ([notebook](notebooks/09_model_evaluation.ipynb))
 * Exploring the scikit-learn documentation: [module reference](http://scikit-learn.org/stable/modules/classes.html), [user guide](http://scikit-learn.org/stable/user_guide.html), class and function documentation
 
 **Homework:**
-* Watch [Data science in Python](https://www.youtube.com/watch?v=3ZWuPVWq7p4) (35 minutes) for an introduction to linear regression (and a review of other course content), or at the very least, read through the [associated notebook](http://nbviewer.ipython.org/github/justmarkham/scikit-learn-videos/blob/master/06_linear_regression.ipynb).
+* Watch [Data science in Python](https://www.youtube.com/watch?v=3ZWuPVWq7p4) (35 minutes) for an introduction to linear regression (and a review of other course content), or at the very least, read through the [associated notebook](https://github.com/justmarkham/scikit-learn-videos/blob/master/06_linear_regression.ipynb).
 * **Optional:** For another introduction to linear regression, watch [The Easiest Introduction to Regression Analysis](https://www.youtube.com/watch?v=k_OB1tWX9PM) (14 minutes).
 
 **Model Evaluation Resources:**
@@ -286,10 +286,10 @@ Tuesday | Thursday
 
 ### Class 10: Linear Regression
 * Machine learning exercise ([article](http://blog.dominodatalab.com/10-interesting-uses-of-data-science/))
-* Linear regression ([notebook](http://nbviewer.ipython.org/github/justmarkham/DAT8/blob/master/notebooks/10_linear_regression.ipynb))
+* Linear regression ([notebook](notebooks/10_linear_regression.ipynb))
     * [Capital Bikeshare dataset](data/bikeshare.csv) used in a Kaggle competition
     * [Data dictionary](https://www.kaggle.com/c/bike-sharing-demand/data)
-* Feature engineering example: [Predicting User Engagement in Corporate Collaboration Network](http://nbviewer.ipython.org/github/mikeyea/DAT7_project/blob/master/final%20project/Class_Presention_MYea.ipynb)
+* Feature engineering example: [Predicting User Engagement in Corporate Collaboration Network](https://github.com/mikeyea/DAT7_project/blob/master/final%20project/Class_Presention_MYea.ipynb)
 
 **Homework:**
 * Your first project presentation is on Tuesday (9/22)! Please submit a link to your project repository (with slides, code, data, and visualizations) by 6pm on Tuesday.
@@ -300,7 +300,7 @@ Tuesday | Thursday
 * This [introduction to linear regression](http://people.duke.edu/~rnau/regintro.htm) is more detailed and mathematically thorough, and includes lots of good advice.
 * This is a relatively quick post on the [assumptions of linear regression](http://pareonline.net/getvn.asp?n=2&v=8).
 * Setosa has an [interactive visualization](http://setosa.io/ev/ordinary-least-squares-regression/) of linear regression.
-* For a brief introduction to confidence intervals, hypothesis testing, p-values, and R-squared, as well as a comparison between scikit-learn code and [Statsmodels](http://statsmodels.sourceforge.net/) code, read my [DAT7 lesson on linear regression](http://nbviewer.ipython.org/github/justmarkham/DAT7/blob/master/notebooks/10_linear_regression.ipynb).
+* For a brief introduction to confidence intervals, hypothesis testing, p-values, and R-squared, as well as a comparison between scikit-learn code and [Statsmodels](http://statsmodels.sourceforge.net/) code, read my [DAT7 lesson on linear regression](https://github.com/justmarkham/DAT7/blob/master/notebooks/10_linear_regression.ipynb).
 * Here is a useful explanation of [confidence intervals](http://www.quora.com/What-is-a-confidence-interval-in-laymans-terms/answer/Michael-Hochster) from Quora.
 * [Hypothesis Testing: The Basics](http://20bits.com/article/hypothesis-testing-the-basics) provides a nice overview of the topic, and John Rauser's talk on [Statistics Without the Agonizing Pain](https://www.youtube.com/watch?v=5Dnw46eC-0o) (12 minutes) gives a great explanation of how the null hypothesis is rejected.
 * Earlier this year, a major scientific journal banned the use of p-values:
@@ -321,16 +321,16 @@ Tuesday | Thursday
 
 **Homework:**
 * Watch Rahul Patwari's videos on [probability](https://www.youtube.com/watch?v=o4QmoNfW3bI) (5 minutes) and [odds](https://www.youtube.com/watch?v=GxbXQjX7fC0) (8 minutes) if you're not comfortable with either of those terms.
-* Read these excellent articles from BetterExplained: [An Intuitive Guide To Exponential Functions & e](http://betterexplained.com/articles/an-intuitive-guide-to-exponential-functions-e/) and [Demystifying the Natural Logarithm (ln)](http://betterexplained.com/articles/demystifying-the-natural-logarithm-ln/). Then, review this [brief summary](http://nbviewer.ipython.org/github/justmarkham/DAT8/blob/master/notebooks/12_e_log_examples.ipynb) of exponential functions and logarithms.
+* Read these excellent articles from BetterExplained: [An Intuitive Guide To Exponential Functions & e](http://betterexplained.com/articles/an-intuitive-guide-to-exponential-functions-e/) and [Demystifying the Natural Logarithm (ln)](http://betterexplained.com/articles/demystifying-the-natural-logarithm-ln/). Then, review this [brief summary](notebooks/12_e_log_examples.ipynb) of exponential functions and logarithms.
 
 -----
 
 ### Class 12: Logistic Regression
 * Yelp votes homework due (solution)
-* Logistic regression ([notebook](http://nbviewer.ipython.org/github/justmarkham/DAT8/blob/master/notebooks/12_logistic_regression.ipynb))
+* Logistic regression ([notebook](notebooks/12_logistic_regression.ipynb))
     * [Glass identification dataset](https://archive.ics.uci.edu/ml/datasets/Glass+Identification)
-* Exercise with Titanic data ([notebook](http://nbviewer.ipython.org/github/justmarkham/DAT8/blob/master/notebooks/12_titanic_confusion.ipynb), [data](data/titanic.csv), [data dictionary](https://www.kaggle.com/c/titanic/data))
-* Confusion matrix ([slides](slides/12_confusion_matrix.pdf), [notebook](http://nbviewer.ipython.org/github/justmarkham/DAT8/blob/master/notebooks/12_titanic_confusion.ipynb))
+* Exercise with Titanic data ([notebook](notebooks/12_titanic_confusion.ipynb), [data](data/titanic.csv), [data dictionary](https://www.kaggle.com/c/titanic/data))
+* Confusion matrix ([slides](slides/12_confusion_matrix.pdf), [notebook](notebooks/12_titanic_confusion.ipynb))
 
 **Homework:**
 * If you aren't yet comfortable with all of the confusion matrix terminology, watch Rahul Patwari's videos on [Intuitive sensitivity and specificity](https://www.youtube.com/watch?v=U4_3fditnWg) (9 minutes) and [The tradeoff between sensitivity and specificity](https://www.youtube.com/watch?v=vtYDyGGeQyo) (13 minutes).
@@ -346,23 +346,23 @@ Tuesday | Thursday
 
 **Confusion Matrix Resources:**
 * My [simple guide to confusion matrix terminology](http://www.dataschool.io/simple-guide-to-confusion-matrix-terminology/) may be useful to you as a reference.
-* This notebook (from another DAT course) explains [how to calculate "expected value"](http://nbviewer.ipython.org/github/podopie/DAT18NYC/blob/master/classes/13-expected_value_cost_benefit_analysis.ipynb) from a confusion matrix by treating it as a cost-benefit matrix.
+* This notebook (from another DAT course) explains [how to calculate "expected value"](https://github.com/podopie/DAT18NYC/blob/master/classes/13-expected_value_cost_benefit_analysis.ipynb) from a confusion matrix by treating it as a cost-benefit matrix.
 
 <!--
 
 -----
 
 ### Class 13: Advanced Model Evaluation
-* Advanced model evaluation ([notebook](http://nbviewer.ipython.org/github/justmarkham/DAT8/blob/master/notebooks/13_advanced_model_evaluation.ipynb))
+* Advanced model evaluation ([notebook](notebooks/13_advanced_model_evaluation.ipynb))
     * Null accuracy, handling missing values
     * Confusion matrix
     * Handling categorical features
 * ROC curves and AUC
-    * Discuss the [video assignment](homework/13_roc_auc.md)
+    * Discuss the [video/reading assignment](homework/13_roc_auc.md)
     * Exercise: drawing an ROC curve ([slides](slides/13_drawing_roc.pdf))
     * Return to the notebook
 * Cross-validation
-    * Discuss the [video/reading assignment](homework/13_cross_validation.md) ([notebook](http://nbviewer.ipython.org/github/justmarkham/DAT8/blob/master/notebooks/13_cross_validation.ipynb))
+    * Discuss the [video/reading assignment](homework/13_cross_validation.md) ([notebook](notebooks/13_cross_validation.ipynb))
 
 **Homework:**
 * Reading assignment on [spam filtering](homework/14_spam_filtering.md)
@@ -375,7 +375,7 @@ Tuesday | Thursday
 * [An introduction to ROC analysis](http://people.inf.elte.hu/kiss/13dwhdm/roc.pdf) is a very readable paper on the topic.
 * ROC curves can be used across a wide variety of applications, such as [comparing different feature sets](http://research.microsoft.com/pubs/205472/aisec10-leontjeva.pdf) for detecting fraudulent Skype users, and [comparing different classifiers](http://www.cse.ust.hk/nevinZhangGroup/readings/yi/Bradley_PR97.pdf) on a number of popular datasets.
 * This blog post about [Amazon Machine Learning](https://aws.amazon.com/blogs/aws/amazon-machine-learning-make-data-driven-decisions-at-scale/) contains a neat [graphic](https://media.amazonwebservices.com/blog/2015/ml_adjust_model_1.png) showing how classification threshold affects different evaluation metrics.
-* This short notebook demonstrates how ROC curves and AUC are only sensitive to the [rank ordering of predicted probabilities](http://nbviewer.ipython.org/github/justmarkham/DAT8/blob/master/notebooks/13_roc_auc_rank_ordering.ipynb).
+* This short notebook demonstrates how ROC curves and AUC are only sensitive to the [rank ordering of predicted probabilities](notebooks/13_roc_auc_rank_ordering.ipynb).
 
 **Cross-Validation Resources:**
 * For more on cross-validation, read section 5.1 of [An Introduction to Statistical Learning](http://www-bcf.usc.edu/~gareth/ISL/) (11 pages) or watch the related videos: [K-fold and leave-one-out cross-validation](https://www.youtube.com/watch?v=nZAM5OXrktY) (14 minutes), [cross-validation the right and wrong ways](https://www.youtube.com/watch?v=S06JpVoNaA0) (10 minutes).
@@ -390,10 +390,10 @@ Tuesday | Thursday
 ### Class 14: Naive Bayes and Text Data
 * Conditional probability and Bayes' theorem
     * [Slides](slides/14_bayes_theorem.pdf) (adapted from [Visualizing Bayes' theorem](http://oscarbonilla.com/2009/05/visualizing-bayes-theorem/))
-    * Applying Bayes' theorem to iris classification ([notebook](http://nbviewer.ipython.org/github/justmarkham/DAT7/blob/master/notebooks/14_bayes_theorem_iris.ipynb))
+    * Applying Bayes' theorem to iris classification ([notebook](notebooks/14_bayes_theorem_iris.ipynb))
 * Naive Bayes classification
     * [Slides](slides/14_naive_bayes.pdf)
-    * Example with spam filtering ([notebook](http://nbviewer.ipython.org/github/justmarkham/DAT7/blob/master/notebooks/14_naive_bayes_spam.ipynb))
+    * Example with spam filtering ([notebook](notebooks/14_naive_bayes_spam.ipynb))
     * Discuss the reading assignment on [spam filtering](homework/14_spam_filtering.md)
     * Classifying [SMS messages](https://archive.ics.uci.edu/ml/datasets/SMS+Spam+Collection) ([code](code/14_naive_bayes.py))
 
@@ -414,13 +414,13 @@ Tuesday | Thursday
 
 ### Class 15: Natural Language Processing
 * Yelp review text homework due ([solution](code/14_yelp_text.py))
-* Natural language processing ([notebook](http://nbviewer.ipython.org/github/justmarkham/DAT7/blob/master/notebooks/15_natural_language_processing.ipynb))
+* Natural language processing ([notebook](notebooks/15_natural_language_processing.ipynb))
 * Introduction to our Kaggle competition
-    * Create a [Kaggle](https://www.kaggle.com/) account, join the [competition](https://inclass.kaggle.com/c/dat7-stack-overflow) using the invitation link, download the sample submission, and then submit the sample submission (which will require SMS account verification).
+    * Create a [Kaggle](https://www.kaggle.com/) account, join the [competition](https://inclass.kaggle.com/c/dat8-stack-overflow) using the invitation link, download the sample submission, and then submit the sample submission (which will require SMS account verification).
 
 **Homework:**
 * Your draft paper is due on Thursday (10/8)! Please submit a link to your project repository (with paper, code, data, and visualizations) before class.
-* Download the competition files, move them to the `DAT7/data` directory, and make sure you can open the CSV files using Pandas. If you have any problems opening the files, you probably need to turn off real-time virus scanning (especially Microsoft Security Essentials).
+* Download the competition files, move them to the `DAT8/data` directory, and make sure you can open the CSV files using Pandas. If you have any problems opening the files, you probably need to turn off real-time virus scanning (especially Microsoft Security Essentials).
 * Come up with some theories about which features might be relevant to predicting the response, and then explore the data to see if those theories appear to be true.
 * **Optional:** Think about some features that might be worth creating from the data, and then figure out how to actually create those features.
 * **Optional:** Watch my [project presentation video](https://www.youtube.com/watch?v=HGr1yQV3Um0) (16 minutes) for a tour of the end-to-end machine learning process for a Kaggle competition, including the creation of new features. (Or, just read through the [slides](https://speakerdeck.com/justmarkham/allstate-purchase-prediction-challenge-on-kaggle).)
@@ -429,7 +429,7 @@ Tuesday | Thursday
 * If you want to learn a lot more NLP, check out the excellent [video lectures](https://class.coursera.org/nlp/lecture) and [slides](http://web.stanford.edu/~jurafsky/NLPCourseraSlides.html) from this [Coursera course](https://www.coursera.org/course/nlp) (which is no longer being offered).
 * This slide deck defines many of the [key NLP terms](https://github.com/ga-students/DAT_SF_9/blob/master/16_Text_Mining/DAT9_lec16_Text_Mining.pdf).
 * [Natural Language Processing with Python](http://www.nltk.org/book/) is the most popular book for going in-depth with the [Natural Language Toolkit](http://www.nltk.org/) (NLTK).
-* [A Smattering of NLP in Python](http://nbviewer.ipython.org/github/charlieg/A-Smattering-of-NLP-in-Python/blob/master/A%20Smattering%20of%20NLP%20in%20Python.ipynb) provides a nice overview of NLTK, as does this [notebook from DAT5](http://nbviewer.ipython.org/github/justmarkham/DAT5/blob/master/notebooks/14_nlp.ipynb).
+* [A Smattering of NLP in Python](https://github.com/charlieg/A-Smattering-of-NLP-in-Python/blob/master/A%20Smattering%20of%20NLP%20in%20Python.ipynb) provides a nice overview of NLTK, as does this [notebook from DAT5](https://github.com/justmarkham/DAT5/blob/master/notebooks/14_nlp.ipynb).
 * [spaCy](https://honnibal.github.io/spaCy/) is a newer Python library for text processing that is focused on performance (unlike NLTK).
 * If you want to get serious about NLP, [Stanford CoreNLP](http://nlp.stanford.edu/software/corenlp.shtml) is a suite of tools (written in Java) that is highly regarded.
 * [DC Natural Language Processing](http://www.meetup.com/DC-NLP/) is an active Meetup group in our local area.
@@ -438,7 +438,7 @@ Tuesday | Thursday
 
 ### Class 16: Kaggle Competition
 * Overview of how Kaggle works ([slides](slides/16_kaggle.pdf))
-* Kaggle In-Class competition: [Predict whether a Stack Overflow question will be closed](https://inclass.kaggle.com/c/dat7-stack-overflow)
+* Kaggle In-Class competition: [Predict whether a Stack Overflow question will be closed](https://inclass.kaggle.com/c/dat8-stack-overflow)
     * [Complete code file](code/16_kaggle.py)
     * [Minimal code file](code/16_kaggle_minimal.py): excludes all exploratory code
     * [Explanations of log loss](http://www.quora.com/What-is-an-intuitive-explanation-for-the-log-loss-function)
@@ -457,7 +457,7 @@ Tuesday | Thursday
 -----
 
 ### Class 17: Decision Trees
-* Decision trees ([notebook](http://nbviewer.ipython.org/github/justmarkham/DAT7/blob/master/notebooks/17_decision_trees.ipynb))
+* Decision trees ([notebook](notebooks/17_decision_trees.ipynb))
 
 **Homework:**
 * Read the "Wisdom of the crowds" section from MLWave's post on [Human Ensemble Learning](http://mlwave.com/human-ensemble-learning/).
@@ -479,7 +479,7 @@ Tuesday | Thursday
 
 ### Class 18: Ensembling
 * Finish decision trees lesson
-* Ensembling ([notebook](http://nbviewer.ipython.org/github/justmarkham/DAT7/blob/master/notebooks/18_ensembling.ipynb))
+* Ensembling ([notebook](notebooks/18_ensembling.ipynb))
 
 **Resources:**
 * scikit-learn's documentation on [ensemble methods](http://scikit-learn.org/stable/modules/ensemble.html) covers both "averaging methods" (such as bagging and Random Forests) as well as "boosting methods" (such as AdaBoost and Gradient Tree Boosting).
@@ -503,8 +503,8 @@ Tuesday | Thursday
 * **Optional:** Read this classic paper, which may help you to connect many of the topics we have studied throughout the course: [A Few Useful Things to Know about Machine Learning](http://homes.cs.washington.edu/~pedrod/papers/cacm12.pdf).
 
 **scikit-learn Resources:**
-* For a recap of today's lesson on GridSearchCV, plus a comparison with RandomizedSearchCV, watch [How to find the best model parameters in scikit-learn](https://www.youtube.com/watch?v=Gol_qOgRqfA&list=PL5-da3qGB5ICeMbQuqbbCOQWcS6OYBr5A&index=8) (28 minutes) or read through the [companion notebook](http://nbviewer.ipython.org/github/justmarkham/scikit-learn-videos/blob/master/08_grid_search.ipynb).
-* Here is a longer example of [feature scaling](http://nbviewer.ipython.org/github/rasbt/pattern_classification/blob/master/preprocessing/about_standardization_normalization.ipynb) in scikit-learn, with additional discussion of the types of scaling you can use.
+* For a recap of today's lesson on GridSearchCV, plus a comparison with RandomizedSearchCV, watch [How to find the best model parameters in scikit-learn](https://www.youtube.com/watch?v=Gol_qOgRqfA&list=PL5-da3qGB5ICeMbQuqbbCOQWcS6OYBr5A&index=8) (28 minutes) or read through the [companion notebook](https://github.com/justmarkham/scikit-learn-videos/blob/master/08_grid_search.ipynb).
+* Here is a longer example of [feature scaling](https://github.com/rasbt/pattern_classification/blob/master/preprocessing/about_standardization_normalization.ipynb) in scikit-learn, with additional discussion of the types of scaling you can use.
 * [Practical Data Science in Python](http://radimrehurek.com/data_science_python/) is a long and well-written notebook that includes the use of scikit-learn's Pipeline.
 * scikit-learn has an incredibly active [mailing list](https://www.mail-archive.com/scikit-learn-general@lists.sourceforge.net/index.html) that is often much more useful than Stack Overflow for researching a particular function.
 
