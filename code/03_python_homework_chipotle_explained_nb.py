@@ -1,6 +1,3 @@
-
-# coding: utf-8
-
 # # Python Homework with Chipotle Data - Explained
 # 
 # *Original version written by [Alex Sherman](https://www.linkedin.com/in/alexjmsherman)*
@@ -10,13 +7,8 @@
 # - Read in the file with csv.reader() and store it in an object called 'file_nested_list'.
 # - Hint: This is a TSV file, and csv.reader() needs to be told how to handle it.
 
-# In[1]:
-
 # Change the working directory to the 'data' directory
-get_ipython().magic(u'cd ../data')
 
-
-# In[2]:
 
 # To use csv.reader, we must import the csv module
 import csv
@@ -47,8 +39,6 @@ with open('chipotle.tsv', mode='rU') as f:   # We temporarily refer to the file 
 # 
 # - Separate 'file_nested_list' into the 'header' and the 'data'.
 
-# In[3]:
-
 header = file_nested_list[0]
 data = file_nested_list[1:]
 
@@ -63,8 +53,6 @@ data = file_nested_list[1:]
 
 # ### Calculating the sum of the price of all orders
 
-# In[4]:
-
 # After exploring our data for a minute, we find two orders for the same item - Chicken Bowl - differing by the quantity
 print header
 print data[4]
@@ -72,8 +60,6 @@ print data[5]
 
 
 # We see that the item_price field reflects the quantity ordered. Thus, to calculate the total value of all orders, we can safely ignore the quantity column because the item_price takes quantity into account.
-
-# In[5]:
 
 # We want the sum of all the order prices - the last item in each list. Here are two ways we could get this data:
 
@@ -87,14 +73,10 @@ prices = [row[-1] for row in data]   # slice to the last position
 prices[0:5]
 
 
-# In[6]:
-
 # Each item in the list is a sting.  We can tell this because the results above are wrapped in quotes.
 # To confirm, let's explicity check the type of the first item in the list:
 type(prices[0])
 
-
-# In[7]:
 
 # Since we want to do a calculation, we need to change the type from string to float. 
 # To do this, we first need to remove the $. Here are two different ways to accomplish this:
@@ -109,8 +91,6 @@ prices = [row[4].replace('$', '') for row in data]   # remove the dollar sign by
 prices[0:5]
 
 
-# In[8]:
-
 # Now we can convert our results to floats
 prices = [float(row[4][1:]) for row in data]
 
@@ -119,16 +99,12 @@ print prices[0:5]
 print type(prices[0])
 
 
-# In[9]:
-
 # Finally, we calculate our total order sum with the built-in sum function
 total_order_sum = sum([float(row[4][1:]) for row in data]) 
 total_order_sum
 
 
 # ### Calculating the total number of orders
-
-# In[10]:
 
 # We can look at the first and last items in the list
 print header
@@ -140,8 +116,6 @@ print data[-1]
 # 
 # So, let's confirm this assumption:
 
-# In[11]:
-
 # First, let's build a list of the order_ids
 order_ids = [row[0] for row in data]
 
@@ -149,13 +123,9 @@ order_ids = [row[0] for row in data]
 order_ids[0:10]
 
 
-# In[12]:
-
 # We only want to count each order once. We can get the distinct order values with the set function:
 set(order_ids[0:10])
 
-
-# In[13]:
 
 # Only keep unique order_ids
 unique_order_ids = set(order_ids)
@@ -167,14 +137,10 @@ num_orders
 
 # ### Calculating the average price
 
-# In[14]:
-
 # Finally, we answer the question by calculating the average
 average_order_price = total_order_sum / num_orders
 average_order_price
 
-
-# In[15]:
 
 # Let's recap by looking at the final code:
 total_order_sum = sum([float(row[4][1:]) for row in data])
@@ -188,8 +154,6 @@ average_order_price
 # - Create a list (or set) of all unique sodas and soft drinks that they sell.
 # - **Note:** Just look for 'Canned Soda' and 'Canned Soft Drink', and ignore other drinks like 'Izze'.
 
-# In[16]:
-
 # First let's look at all of the items
 distinct_items = set([row[2] for row in data])
 distinct_items 
@@ -201,8 +165,6 @@ distinct_items
 # 
 # This means we only need to use one filter criteria: **Look for rows with the word 'Canned'**
 
-# In[17]:
-
 # Create a list only including soda and soft drink orders
 soda_orders = []
 for row in data:
@@ -213,27 +175,19 @@ for row in data:
 soda_orders[0:5]
 
 
-# In[18]:
-
 # This can also be done using a list comprehension with an 'if' condition
 soda_orders = [row for row in data if 'Canned' in row[2]]
 
 
 # Just out of interest, let's look at two other ways we could have filtered the data:
 
-# In[19]:
-
 soda_orders = [row for row in data if 'Canned Soda' in row[2] or 'Canned Soft Drink' in row[2]]
 soda_orders[0:5]
 
 
-# In[20]:
-
 soda_orders = [row for row in data if 'Canned Soda' == row[2] or 'Canned Soft Drink' == row[2]]
 soda_orders[0:5]
 
-
-# In[21]:
 
 # We only want the choice_description (e.g. Sprite, Mountain Dew). This is the fourth item in the list.
 # Since Python uses 0-based indexing, we get this by using row[3] as the first argument in our list comprehension:
@@ -245,16 +199,12 @@ sodas[0:5]
 
 # The results above may look like 5 lists inside of a larger list. Let's assume that's the case, and try to get the first Sprite:
 
-# In[22]:
-
 sodas[0][0]
 
 
 # What is going on?
 # 
 # The raw data for choice_description includues brackets (e.g. [Sprite]). We loaded this data in as a string, so while it looks like we have lists inside lists, the result is actually just one list. This is indicated by the quotes wrapping each item in the list, which means the list contains strings.
-
-# In[23]:
 
 # Print the first list element
 print sodas[0]
@@ -266,8 +216,6 @@ print type(sodas[0])
 print len(sodas[0])
 
 
-# In[24]:
-
 # Let's strip the brackets at the start and end of each soda name, using [1:-1] to remove the first and last characters
 sodas = [row[3][1:-1] for row in data if 'Canned' in row[2]]
 
@@ -275,16 +223,12 @@ sodas = [row[3][1:-1] for row in data if 'Canned' in row[2]]
 sodas[0:5]
 
 
-# In[25]:
-
 # Almost done - we just need to get rid of duplicate values
 unique_sodas = set([row[3][1:-1] for row in data if 'Canned' in row[2]])   # Success in one line of code!
 unique_sodas
 
 
 # Just for reference, how would this look if we did not use a list comprehension?
-
-# In[26]:
 
 # build a list of all sodas
 sodas = []
@@ -306,8 +250,6 @@ unique_sodas = set(sodas)
 
 # ### Calculating the total number of burritos
 
-# In[27]:
-
 # keep a running total
 burrito_count = 0
 
@@ -319,8 +261,6 @@ for row in data:
 
 # Like many programming languages, Python allows you to use `x += 1` as a replacement for `x = x + 1`. Let's use that instead:
 
-# In[28]:
-
 # keep a running total
 burrito_count = 0
 
@@ -330,8 +270,6 @@ for row in data:
         burrito_count += 1   # this is the only line that changed
 
 
-# In[29]:
-
 burrito_count
 
 
@@ -339,13 +277,9 @@ burrito_count
 
 # ### Calculating the total number of toppings
 
-# In[30]:
-
 # Let's look at a single burrito order
 data[7]
 
-
-# In[31]:
 
 # There appear to be 8 toppings:
 data[7][3]
@@ -355,8 +289,6 @@ data[7][3]
 # 
 # Start by asking yourself: How did you count the number of toppings? You probably looked for **commas**!
 
-# In[32]:
-
 # Use the string method 'count' to count the number of commas
 data[7][3].count(',')
 
@@ -364,8 +296,6 @@ data[7][3].count(',')
 # And of course, if there are 7 commas, that means there are 8 toppings.
 # 
 # So, let's revise our original loop:
-
-# In[33]:
 
 # keep a running total of burritos and toppings
 burrito_count = 0
@@ -383,15 +313,11 @@ print topping_count
 
 # ### Calculating the average number of toppings
 
-# In[34]:
-
 # calculate the average topping count and round to 2 digits
 round(topping_count / float(burrito_count), 2)
 
 
 # Just for reference, how would this look if we used list comprehensions?
-
-# In[35]:
 
 burrito_count = sum(1 for row in data if 'Burrito' in row[2])
 topping_count = sum([row[3].count(',') + 1 for row in data if 'Burrito' in row[2]])
@@ -409,8 +335,6 @@ round(topping_count / float(burrito_count), 2)
 
 # Let's pretend I have a list of four names, and I want to make a dictionary in which the **key** is the name, and the **value** is the count of that name.
 
-# In[36]:
-
 # This is my list of names
 names = ['Ben', 'Victor', 'Laura', 'Victor']
 
@@ -420,8 +344,6 @@ names = ['Ben', 'Victor', 'Laura', 'Victor']
 # `{'Ben':1, 'Laura':1, 'Victor':2}`
 # 
 # How would I do that? Here's my first attempt:
-
-# In[37]:
 
 # create empty dictionary
 name_count = {}
@@ -438,8 +360,6 @@ name_count
 # 
 # Let's try again:
 
-# In[38]:
-
 name_count = {}
 
 for name in names:
@@ -452,8 +372,6 @@ name_count
 # That doesn't work because the dictionary starts out empty, and you can't tell Python to "increment the Ben value by 1" unless the Ben value starts at 0.
 # 
 # Let's try to fix that:
-
-# In[39]:
 
 name_count = {}
 
@@ -472,8 +390,6 @@ name_count
 # 
 # Here's what we really want to do:
 
-# In[40]:
-
 name_count = {}
 
 for name in names:
@@ -489,13 +405,9 @@ name_count
 
 # ### Applying this technique to chip orders
 
-# In[41]:
-
 # Reminder on the header
 header
 
-
-# In[42]:
 
 # Find all the chip orders
 chip_orders = [row for row in data if 'Chips' in row[2]]
@@ -503,8 +415,6 @@ chip_orders = [row for row in data if 'Chips' in row[2]]
 # Look at the first five
 chip_orders[:5]
 
-
-# In[43]:
 
 # The chip quantities are easily accessible
 chip_quantities = [row[1] for row in data if 'Chips' in row[2]]
@@ -514,8 +424,6 @@ chip_quantities[:5]
 
 
 # Let's put this all together!
-
-# In[44]:
 
 # start with an empty dictionary
 chips = {}
@@ -538,8 +446,6 @@ chips
 # 
 # Here's a simple example using the names data:
 
-# In[45]:
-
 # This is a tiny variation of our code that previously raised an error
 
 # Create an empty dictionary that will eventually contain integers (and thus the default value is 0)
@@ -553,13 +459,9 @@ for name in names:
 name_count
 
 
-# In[46]:
-
 # It will print nicely if we convert it to a regular dictionary
 dict(name_count)
 
-
-# In[47]:
 
 # Apply this to the chip orders
 dchips = defaultdict(int)
@@ -569,4 +471,3 @@ for row in data:
         dchips[row[2]] += int(row[1])
 
 dict(dchips)
-

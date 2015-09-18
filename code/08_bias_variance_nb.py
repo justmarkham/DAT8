@@ -1,23 +1,15 @@
-
-# coding: utf-8
-
 # # Exploring the Bias-Variance Tradeoff
-
-# In[1]:
 
 import pandas as pd
 import numpy as np
 import seaborn as sns
 
 # allow plots to appear in the notebook
-get_ipython().magic(u'matplotlib inline')
 
 
 # ## Brain and body weight
 
 # This is a [dataset](http://people.sc.fsu.edu/~jburkardt/datasets/regression/x01.txt) of the average weight of the body and the brain for 62 mammal species. Let's read it into pandas and take a quick look:
-
-# In[2]:
 
 url = 'http://people.sc.fsu.edu/~jburkardt/datasets/regression/x01.txt'
 col_names = ['id', 'brain', 'body']
@@ -25,14 +17,10 @@ mammals = pd.read_table(url, sep='\s+', skiprows=33, names=col_names, index_col=
 mammals.head()
 
 
-# In[3]:
-
 mammals.describe()
 
 
 # We're going to focus on a smaller subset in which the body weight is less than 200:
-
-# In[4]:
 
 # only keep rows in which the body weight is less than 200
 mammals = mammals[mammals.body < 200]
@@ -42,8 +30,6 @@ mammals.shape
 # We're now going to pretend that there are only 51 mammal species in existence. In other words, we are pretending that this is the entire dataset of brain and body weights for **every known mammal species**.
 # 
 # Let's create a scatterplot (using [Seaborn](http://stanford.edu/~mwaskom/software/seaborn/)) to visualize the relationship between brain and body weight:
-
-# In[5]:
 
 sns.lmplot(x='body', y='brain', data=mammals, ci=None, fit_reg=False)
 sns.plt.xlim(-10, 200)
@@ -55,8 +41,6 @@ sns.plt.ylim(-10, 250)
 # ## Making a prediction
 
 # Now let's pretend that a **new mammal species** is discovered. We measure the body weight of every member of this species that we can find, and calculate an **average body weight of 100**. We want to **predict the average brain weight** of this species (rather than measuring it directly). How might we do this?
-
-# In[6]:
 
 sns.lmplot(x='body', y='brain', data=mammals, ci=None)
 sns.plt.xlim(-10, 200)
@@ -75,8 +59,6 @@ sns.plt.ylim(-10, 250)
 # 
 # Let's simulate this situation by assigning each of the 51 observations to **either universe 1 or universe 2**:
 
-# In[7]:
-
 # set a random seed for reproducibility
 np.random.seed(12345)
 
@@ -89,8 +71,6 @@ mammals.head()
 # 
 # We can now tell Seaborn to create two plots, in which the left plot only uses the data from **universe 1** and the right plot only uses the data from **universe 2**:
 
-# In[8]:
-
 # col='universe' subsets the data by universe and creates two separate plots
 sns.lmplot(x='body', y='brain', data=mammals, ci=None, col='universe')
 sns.plt.xlim(-10, 200)
@@ -100,8 +80,6 @@ sns.plt.ylim(-10, 250)
 # The line looks pretty similar between the two plots, despite the fact that they used separate samples of data. In both cases, we would predict a brain weight of about 45.
 # 
 # It's easier to see the degree of similarity by placing them on the same plot:
-
-# In[9]:
 
 # hue='universe' subsets the data by universe and creates a single plot
 sns.lmplot(x='body', y='brain', data=mammals, ci=None, hue='universe')
@@ -118,8 +96,6 @@ sns.plt.ylim(-10, 250)
 
 # What would a **low bias, high variance** model look like? Let's try polynomial regression, with an eighth order polynomial:
 
-# In[10]:
-
 sns.lmplot(x='body', y='brain', data=mammals, ci=None, col='universe', order=8)
 sns.plt.xlim(-10, 200)
 sns.plt.ylim(-10, 250)
@@ -133,8 +109,6 @@ sns.plt.ylim(-10, 250)
 # Perhaps we can create a model that has **less bias than the linear model**, and **less variance than the eighth order polynomial**?
 # 
 # Let's try a second order polynomial instead:
-
-# In[11]:
 
 sns.lmplot(x='body', y='brain', data=mammals, ci=None, col='universe', order=2)
 sns.plt.xlim(-10, 200)

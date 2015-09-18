@@ -1,6 +1,3 @@
-
-# coding: utf-8
-
 # # Model Evaluation
 
 # ## Review of last class
@@ -20,36 +17,26 @@
 # 1. Train the model on the **entire dataset**.
 # 2. Test the model on the **same dataset**, and evaluate how well we did by comparing the **predicted** response values with the **true** response values.
 
-# In[1]:
-
 # read the NBA data into a DataFrame
 import pandas as pd
 url = 'https://raw.githubusercontent.com/justmarkham/DAT4-students/master/kerry/Final/NBA_players_2015.csv'
 nba = pd.read_csv(url, index_col=0)
 
 
-# In[2]:
-
 # map positions to numbers
 nba['pos_num'] = nba.pos.map({'C':0, 'F':1, 'G':2})
 
-
-# In[3]:
 
 # create feature matrix (X)
 feature_cols = ['ast', 'stl', 'blk', 'tov', 'pf']
 X = nba[feature_cols]
 
 
-# In[4]:
-
 # create response vector (y)
 y = nba.pos_num
 
 
 # ### KNN (K=50)
-
-# In[5]:
 
 # import the class
 from sklearn.neighbors import KNeighborsClassifier
@@ -63,8 +50,6 @@ knn.fit(X, y)
 # predict the response values for the observations in X ("test the model")
 knn.predict(X)
 
-
-# In[6]:
 
 # store the predicted response values
 y_pred_class = knn.predict(X)
@@ -82,8 +67,6 @@ y_pred_class = knn.predict(X)
 # 
 # In this case, we'll use classification accuracy.
 
-# In[7]:
-
 # compute classification accuracy
 from sklearn import metrics
 print metrics.accuracy_score(y, y_pred_class)
@@ -92,8 +75,6 @@ print metrics.accuracy_score(y, y_pred_class)
 # This is known as **training accuracy** because we are evaluating the model on the same data we used to train the model.
 
 # ### KNN (K=1)
-
-# In[8]:
 
 knn = KNeighborsClassifier(n_neighbors=1)
 knn.fit(X, y)
@@ -132,22 +113,16 @@ print metrics.accuracy_score(y, y_pred_class)
 
 # ### Understanding "unpacking"
 
-# In[9]:
-
 def min_max(nums):
     smallest = min(nums)
     largest = max(nums)
     return [smallest, largest]
 
 
-# In[10]:
-
 min_and_max = min_max([1, 2, 3])
 print min_and_max
 print type(min_and_max)
 
-
-# In[11]:
 
 the_min, the_max = min_max([1, 2, 3])
 print the_min
@@ -158,13 +133,9 @@ print type(the_max)
 
 # ### Understanding the `train_test_split` function
 
-# In[12]:
-
 from sklearn.cross_validation import train_test_split
 X_train, X_test, y_train, y_test = train_test_split(X, y)
 
-
-# In[13]:
 
 # before splitting
 print X.shape
@@ -173,8 +144,6 @@ print X.shape
 print X_train.shape
 print X_test.shape
 
-
-# In[14]:
 
 # before splitting
 print y.shape
@@ -188,8 +157,6 @@ print y_test.shape
 
 # ### Understanding the `random_state` parameter
 
-# In[15]:
-
 # WITHOUT a random_state parameter
 X_train, X_test, y_train, y_test = train_test_split(X, y)
 
@@ -199,8 +166,6 @@ print X_test.head(1)
 print y_train.head(1)
 print y_test.head(1)
 
-
-# In[16]:
 
 # WITH a random_state parameter
 X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=99)
@@ -214,20 +179,14 @@ print y_test.head(1)
 
 # ### Using the train/test split procedure (K=1)
 
-# In[17]:
-
 # STEP 1: split X and y into training and testing sets (using random_state for reproducibility)
 X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=99)
 
-
-# In[18]:
 
 # STEP 2: train the model on the training set (using K=1)
 knn = KNeighborsClassifier(n_neighbors=1)
 knn.fit(X_train, y_train)
 
-
-# In[19]:
 
 # STEP 3: test the model on the testing set, and check the accuracy
 y_pred_class = knn.predict(X_test)
@@ -235,8 +194,6 @@ print metrics.accuracy_score(y_test, y_pred_class)
 
 
 # ### Repeating for K=50
-
-# In[20]:
 
 knn = KNeighborsClassifier(n_neighbors=50)
 knn.fit(X_train, y_train)
@@ -250,21 +207,15 @@ print metrics.accuracy_score(y_test, y_pred_class)
 
 # Null accuracy is the accuracy that could be achieved by **always predicting the most frequent class**. It is a benchmark against which you may want to measure your classification model.
 
-# In[21]:
-
 # examine the class distribution
 y_test.value_counts()
 
-
-# In[22]:
 
 # compute null accuracy
 y_test.value_counts().head(1) / len(y_test)
 
 
 # ### Searching for the "best" value of K
-
-# In[23]:
 
 # calculate TRAINING ERROR and TESTING ERROR for K=1 through 100
 
@@ -290,15 +241,10 @@ for k in k_range:
     testing_error.append(1 - testing_accuracy)
 
 
-# In[24]:
-
 # allow plots to appear in the notebook
-get_ipython().magic(u'matplotlib inline')
 import matplotlib.pyplot as plt
 plt.style.use('fivethirtyeight')
 
-
-# In[25]:
 
 # create a DataFrame of K, training error, and testing error
 column_dict = {'K': k_range, 'training error':training_error, 'testing error':testing_error}
@@ -306,21 +252,15 @@ df = pd.DataFrame(column_dict).set_index('K').sort_index(ascending=False)
 df.head()
 
 
-# In[26]:
-
 # plot the relationship between K (HIGH TO LOW) and TESTING ERROR
 df.plot(y='testing error')
 plt.xlabel('Value of K for KNN')
 plt.ylabel('Error (lower is better)')
 
 
-# In[27]:
-
 # find the minimum testing error and the associated K value
 df.sort('testing error').head()
 
-
-# In[28]:
 
 # alternative method
 min(zip(testing_error, k_range))
@@ -332,8 +272,6 @@ min(zip(testing_error, k_range))
 # - Given the statistics of an **unknown player**, we estimate that we would be able to correctly predict his position about 74% of the time.
 
 # ### Training error versus testing error
-
-# In[29]:
 
 # plot the relationship between K (HIGH TO LOW) and both TRAINING ERROR and TESTING ERROR
 df.plot()
@@ -350,8 +288,6 @@ plt.ylabel('Error (lower is better)')
 
 # Given the statistics of a (truly) unknown player, how do we predict his position?
 
-# In[30]:
-
 # instantiate the model with the best known parameters
 knn = KNeighborsClassifier(n_neighbors=14)
 
@@ -365,8 +301,6 @@ knn.predict([1, 1, 0, 1, 2])
 # ## Disadvantages of train/test split?
 
 # What would happen if the `train_test_split` function had split the data differently? Would we get the same exact results as before?
-
-# In[31]:
 
 # try different values for random_state
 X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=98)

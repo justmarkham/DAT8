@@ -1,6 +1,3 @@
-
-# coding: utf-8
-
 # # K-nearest neighbors and scikit-learn
 
 # ## Agenda
@@ -23,16 +20,12 @@
 
 # ## Review of the iris dataset
 
-# In[1]:
-
 # read the iris data into a DataFrame
 import pandas as pd
 url = 'http://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data'
 col_names = ['sepal_length', 'sepal_width', 'petal_length', 'petal_width', 'species']
 iris = pd.read_csv(url, header=None, names=col_names)
 
-
-# In[2]:
 
 iris.head()
 
@@ -54,10 +47,7 @@ iris.head()
 # 
 # We assumed that if an **unknown iris** has measurements similar to **previous irises**, then its species is most likely the same as those previous irises.
 
-# In[3]:
-
 # allow plots to appear in the notebook
-get_ipython().magic(u'matplotlib inline')
 import matplotlib.pyplot as plt
 
 # increase default figure and font sizes for easier viewing
@@ -69,19 +59,13 @@ from matplotlib.colors import ListedColormap
 cmap_bold = ListedColormap(['#FF0000', '#00FF00', '#0000FF'])
 
 
-# In[4]:
-
 # map each iris species to a number
 iris['species_num'] = iris.species.map({'Iris-setosa':0, 'Iris-versicolor':1, 'Iris-virginica':2})
 
 
-# In[5]:
-
 # create a scatter plot of PETAL LENGTH versus PETAL WIDTH and color by SPECIES
 iris.plot(kind='scatter', x='petal_length', y='petal_width', c='species_num', colormap=cmap_bold)
 
-
-# In[6]:
 
 # create a scatter plot of SEPAL LENGTH versus SEPAL WIDTH and color by SPECIES
 iris.plot(kind='scatter', x='sepal_length', y='sepal_width', c='species_num', colormap=cmap_bold)
@@ -142,19 +126,13 @@ iris.plot(kind='scatter', x='sepal_length', y='sepal_width', c='species_num', co
 # 3. Features and response should be **NumPy arrays** (or easily converted to NumPy arrays)
 # 4. Features and response should have **specific shapes** (outlined below)
 
-# In[7]:
-
 iris.head()
 
-
-# In[8]:
 
 # store feature matrix in "X"
 feature_cols = ['sepal_length', 'sepal_width', 'petal_length', 'petal_width']
 X = iris[feature_cols]
 
-
-# In[9]:
 
 # alternative ways to create "X"
 X = iris.drop(['species', 'species_num'], axis=1)
@@ -162,33 +140,23 @@ X = iris.loc[:, 'sepal_length':'petal_width']
 X = iris.iloc[:, 0:4]
 
 
-# In[10]:
-
 # store response vector in "y"
 y = iris.species_num
 
-
-# In[11]:
 
 # check X's type
 print type(X)
 print type(X.values)
 
 
-# In[12]:
-
 # check y's type
 print type(y)
 print type(y.values)
 
 
-# In[13]:
-
 # check X's shape (n = number of observations, p = number of features)
 print X.shape
 
-
-# In[14]:
 
 # check y's shape (single dimension with length n)
 print y.shape
@@ -198,8 +166,6 @@ print y.shape
 
 # **Step 1:** Import the class you plan to use
 
-# In[15]:
-
 from sklearn.neighbors import KNeighborsClassifier
 
 
@@ -207,8 +173,6 @@ from sklearn.neighbors import KNeighborsClassifier
 # 
 # - "Estimator" is scikit-learn's term for "model"
 # - "Instantiate" means "make an instance of"
-
-# In[16]:
 
 # make an instance of a KNeighborsClassifier object
 knn = KNeighborsClassifier(n_neighbors=1)
@@ -220,8 +184,6 @@ type(knn)
 # - Can specify tuning parameters (aka "hyperparameters") during this step
 # - All parameters not specified are set to their defaults
 
-# In[17]:
-
 print knn
 
 
@@ -230,8 +192,6 @@ print knn
 # - Model is "learning" the relationship between X and y in our "training data"
 # - Process through which learning occurs varies by model
 # - Occurs in-place
-
-# In[18]:
 
 knn.fit(X, y)
 
@@ -243,23 +203,17 @@ knn.fit(X, y)
 # - New observations are called "out-of-sample" data
 # - Uses the information it learned during the model training process
 
-# In[19]:
-
 knn.predict([3, 5, 4, 2])
 
 
 # - Returns a NumPy array, and we keep track of what the numbers "mean"
 # - Can predict for multiple observations at once
 
-# In[20]:
-
 X_new = [[3, 5, 4, 2], [5, 4, 3, 2]]
 knn.predict(X_new)
 
 
 # ## Tuning a KNN model
-
-# In[21]:
 
 # instantiate the model (using the value K=5)
 knn = KNeighborsClassifier(n_neighbors=5)
@@ -278,8 +232,6 @@ knn.predict(X_new)
 # **Question:** Does that mean that we have to guess how well our models are likely to do?
 # 
 # **Answer:** Thankfully, no. In the next class, we'll discuss **model evaluation procedures**, which allow us to use our existing labeled data to estimate how well our models are likely to perform on out-of-sample data. These procedures will help us to tune our models and choose between different types of models.
-
-# In[22]:
 
 # calculate predicted probabilities of class membership
 knn.predict_proba(X_new)
