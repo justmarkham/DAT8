@@ -2,9 +2,9 @@
 
 # ## Introduction
 # 
-# - Data from Kaggle's Titanic competition (data, data dictionary)
+# - Data from Kaggle's Titanic competition: [data](https://github.com/justmarkham/DAT8/blob/master/data/titanic.csv), [data dictionary](https://www.kaggle.com/c/titanic/data)
 # - **Goal**: Predict survival based on passenger characteristics
-# - `titanic.csv` is already in our repo, so there is no need to download the data from the Kaggle website.
+# - `titanic.csv` is already in our repo, so there is no need to download the data from the Kaggle website
 
 # ## Step 1: Read the data into Pandas
 

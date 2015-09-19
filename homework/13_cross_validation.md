@@ -7,12 +7,11 @@ Alternatively, read section 5.1 of [An Introduction to Statistical Learning](htt
 Here are some questions to think about:
 
 - What is the purpose of model evaluation?
-- What do the terms training accuracy and testing accuracy mean?
 - What is the drawback of training and testing on the same data?
-- What is the drawback of train/test split?
-- What is the role of "K" in K-fold cross-validation?
+- How does train/test split work, and what is its primary drawback?
+- How does K-fold cross-validation work, and what is the role of "K"?
+- Why do we pass X and y, not X_train and y_train, to the `cross_val_score` function?
+- Why does `cross_val_score` need a "scoring" parameter?
+- What does `cross_val_score` return, and what do we usually do with that object?
+- Under what circumstances does `cross_val_score` return negative scores?
 - When should you use train/test split, and when should you use cross-validation?
-- Why do we pass X and y, not X_train and y_train, to the cross_val_score function?
-- What is the point of the cross_val_score function's "scoring" parameter?
-- What does cross_val_score do, in detail? What does it return?
-- Under what circumstances does cross_val_score return negative scores?
