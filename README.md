@@ -353,20 +353,21 @@ Tuesday | Thursday
 -----
 
 ### Class 13: Advanced Model Evaluation
-* Advanced model evaluation ([notebook](notebooks/13_advanced_model_evaluation.ipynb))
-    * Null accuracy, handling missing values
-    * Confusion matrix
-    * Handling categorical features
+* Data preparation ([notebook](notebooks/13_advanced_model_evaluation.ipynb))
+    * Handling missing values
+    * Handling categorical features (review)
 * ROC curves and AUC
     * Discuss the [video/reading assignment](homework/13_roc_auc.md)
     * Exercise: drawing an ROC curve ([slides](slides/13_drawing_roc.pdf))
-    * Return to the notebook
+    * Return to the main notebook
 * Cross-validation
-    * Discuss the [video/reading assignment](homework/13_cross_validation.md) ([notebook](notebooks/13_cross_validation.ipynb))
+    * Discuss the [video/reading assignment](homework/13_cross_validation.md) and associated [notebook](notebooks/13_cross_validation.ipynb)
+    * Return to the main notebook
+* Exercise with bank marketing data ([notebook](notebooks/13_bank_exercise.ipynb), [data](data/bank-additional.csv), [data dictionary](https://archive.ics.uci.edu/ml/datasets/Bank+Marketing))
 
 **Homework:**
 * Reading assignment on [spam filtering](homework/14_spam_filtering.md)
-* Read these [Introduction to Probability](https://docs.google.com/presentation/d/1cM2dVbJgTWMkHoVNmYlB9df6P2H8BrjaqAcZTaLe9dA/edit#slide=id.gfc3caad2_00) slides, or skim section 2.1 of the [OpenIntro Statistics textbook](https://www.openintro.org/stat/textbook.php) (12 pages). Pay specific attention to the following terms: probability, mutually exclusive, sample space, independent.
+* Read these [Introduction to Probability](https://docs.google.com/presentation/d/1cM2dVbJgTWMkHoVNmYlB9df6P2H8BrjaqAcZTaLe9dA/edit#slide=id.gfc3caad2_00) slides, or skim section 2.1 of the [OpenIntro Statistics textbook](https://www.openintro.org/stat/textbook.php?stat_book=os) (12 pages). Pay specific attention to the following terms: probability, mutually exclusive, sample space, independent.
 * **Optional:** Try to gain an understanding of conditional probability from this [visualization](http://setosa.io/conditional/).
 * **Optional:** For an intuitive introduction to Bayes' theorem, read these posts on [wealth and happiness](http://www.quora.com/What-is-an-intuitive-explanation-of-Bayes-Rule/answer/Michael-Hochster), [ducks](https://planspacedotorg.wordpress.com/2014/02/23/bayes-rule-for-ducks/), or [legos](http://www.countbayesie.com/blog/2015/2/18/bayes-theorem-with-lego).
 
@@ -375,11 +376,11 @@ Tuesday | Thursday
 * [An introduction to ROC analysis](http://people.inf.elte.hu/kiss/13dwhdm/roc.pdf) is a very readable paper on the topic.
 * ROC curves can be used across a wide variety of applications, such as [comparing different feature sets](http://research.microsoft.com/pubs/205472/aisec10-leontjeva.pdf) for detecting fraudulent Skype users, and [comparing different classifiers](http://www.cse.ust.hk/nevinZhangGroup/readings/yi/Bradley_PR97.pdf) on a number of popular datasets.
 * This blog post about [Amazon Machine Learning](https://aws.amazon.com/blogs/aws/amazon-machine-learning-make-data-driven-decisions-at-scale/) contains a neat [graphic](https://media.amazonwebservices.com/blog/2015/ml_adjust_model_1.png) showing how classification threshold affects different evaluation metrics.
-* This short notebook demonstrates how ROC curves and AUC are only sensitive to the [rank ordering of predicted probabilities](notebooks/13_roc_auc_rank_ordering.ipynb).
 
 **Cross-Validation Resources:**
 * For more on cross-validation, read section 5.1 of [An Introduction to Statistical Learning](http://www-bcf.usc.edu/~gareth/ISL/) (11 pages) or watch the related videos: [K-fold and leave-one-out cross-validation](https://www.youtube.com/watch?v=nZAM5OXrktY) (14 minutes), [cross-validation the right and wrong ways](https://www.youtube.com/watch?v=S06JpVoNaA0) (10 minutes).
 * If you want to understand the different variations of cross-validation, this [paper](http://www.jcheminf.com/content/pdf/1758-2946-6-10.pdf) examines and compares them in detail.
+* To learn how to use [GridSearchCV and RandomizedSearchCV](http://scikit-learn.org/stable/modules/grid_search.html) for parameter tuning, watch [How to find the best model parameters in scikit-learn](https://www.youtube.com/watch?v=Gol_qOgRqfA) (28 minutes) or read the [associated notebook](https://github.com/justmarkham/scikit-learn-videos/blob/master/08_grid_search.ipynb).
 
 **Other Resources:**
 * scikit-learn has extensive documentation on [model evaluation](http://scikit-learn.org/stable/modules/model_evaluation.html).
@@ -393,27 +394,30 @@ Tuesday | Thursday
     * Applying Bayes' theorem to iris classification ([notebook](notebooks/14_bayes_theorem_iris.ipynb))
 * Naive Bayes classification
     * [Slides](slides/14_naive_bayes.pdf)
-    * Example with spam filtering ([notebook](notebooks/14_naive_bayes_spam.ipynb))
-    * Discuss the reading assignment on [spam filtering](homework/14_spam_filtering.md)
-    * Classifying [SMS messages](https://archive.ics.uci.edu/ml/datasets/SMS+Spam+Collection) ([code](code/14_naive_bayes.py))
+    * Spam filtering example ([notebook](notebooks/14_naive_bayes_spam.ipynb))
+* Applying Naive Bayes to text data in scikit-learn ([notebook](notebooks/14_text_data_sklearn.ipynb))
+    * [CountVectorizer](http://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.CountVectorizer.html) documentation
+    * SMS messages: [data](data/sms.tsv), [data dictionary](https://archive.ics.uci.edu/ml/datasets/SMS+Spam+Collection)
 
 **Homework:**
+* Complete another [homework assignment](homework/14_yelp_review_text.md) with the [Yelp data](data/yelp.csv). This is due on Tuesday (10/6).
 * Confirm that you have [TextBlob](https://textblob.readthedocs.org/) installed by running `import textblob` from within your preferred Python environment. If it's not installed, run `pip install textblob` at the command line (not from within Python).
-* Complete the [Yelp review text homework](homework/14_yelp_text.md), and add a Python script (or IPython notebook) to your GitHub repo. This assignment is due on Monday.
 
 **Resources:**
-* For more on conditional probability, read these [slides](https://docs.google.com/presentation/d/1psUIyig6OxHQngGEHr3TMkCvhdLInnKnclQoNUr4G4U/edit#slide=id.gfc69f484_00), or read section 2.2 of the [OpenIntro Statistics textbook](https://www.openintro.org/stat/textbook.php) (14 pages).
+* Sebastian Raschka's article on [Naive Bayes and Text Classification](http://sebastianraschka.com/Articles/2014_naive_bayes_1.html) covers the conceptual material from today's class in much more detail.
+* For more on conditional probability, read these [slides](https://docs.google.com/presentation/d/1psUIyig6OxHQngGEHr3TMkCvhdLInnKnclQoNUr4G4U/edit#slide=id.gfc69f484_00), or read section 2.2 of the [OpenIntro Statistics textbook](https://www.openintro.org/stat/textbook.php?stat_book=os) (15 pages).
 * For an intuitive explanation of Naive Bayes classification, read this post on [airport security](http://www.quora.com/In-laymans-terms-how-does-Naive-Bayes-work/answer/Konstantin-Tt).
 * For more details on Naive Bayes classification, Wikipedia has two excellent articles ([Naive Bayes classifier](http://en.wikipedia.org/wiki/Naive_Bayes_classifier) and [Naive Bayes spam filtering](http://en.wikipedia.org/wiki/Naive_Bayes_spam_filtering)), and Cross Validated has a good [Q&A](http://stats.stackexchange.com/questions/21822/understanding-naive-bayes).
-* When applying Naive Bayes classification to a dataset with continuous features, it is best to use [GaussianNB](http://scikit-learn.org/stable/modules/generated/sklearn.naive_bayes.GaussianNB.html) rather than [MultinomialNB](http://scikit-learn.org/stable/modules/generated/sklearn.naive_bayes.MultinomialNB.html). Wikipedia has a short [description](https://en.wikipedia.org/wiki/Naive_Bayes_classifier#Gaussian_naive_Bayes) of Gaussian Naive Bayes, as well as an excellent [example](https://en.wikipedia.org/wiki/Naive_Bayes_classifier#Sex_classification) of its usage.
+* When applying Naive Bayes classification to a dataset with continuous features, it is better to use [GaussianNB](http://scikit-learn.org/stable/modules/generated/sklearn.naive_bayes.GaussianNB.html) rather than [MultinomialNB](http://scikit-learn.org/stable/modules/generated/sklearn.naive_bayes.MultinomialNB.html). This [notebook](notebooks/14_types_of_naive_bayes.ipynb) compares their performances on such a dataset. Wikipedia has a short [description](https://en.wikipedia.org/wiki/Naive_Bayes_classifier#Gaussian_naive_Bayes) of Gaussian Naive Bayes, as well as an excellent [example](https://en.wikipedia.org/wiki/Naive_Bayes_classifier#Sex_classification) of its usage.
 * These [slides](http://www.umiacs.umd.edu/~jbg/teaching/DATA_DIGGING/lecture_05.pdf) from the University of Maryland provide more mathematical details on both logistic regression and Naive Bayes, and also explain how Naive Bayes is actually a "special case" of logistic regression.
 * Andrew Ng has a [paper](https://cs.stanford.edu/people/ang//papers/nips01-discriminativegenerative.pdf) comparing the performance of logistic regression and Naive Bayes across a variety of datasets.
 * If you enjoyed Paul Graham's article, you can read [his follow-up article](http://www.paulgraham.com/better.html) on how he improved his spam filter and this [related paper](http://www.merl.com/publications/docs/TR2004-091.pdf) about state-of-the-art spam filtering in 2004.
+* Yelp has found that Naive Bayes is more effective than Mechanical Turks at [categorizing businesses](http://engineeringblog.yelp.com/2011/02/towards-building-a-high-quality-workforce-with-mechanical-turk.html).
 
 -----
 
 ### Class 15: Natural Language Processing
-* Yelp review text homework due ([solution](code/14_yelp_text.py))
+* Yelp review text homework due (solution)
 * Natural language processing ([notebook](notebooks/15_natural_language_processing.ipynb))
 * Introduction to our Kaggle competition
     * Create a [Kaggle](https://www.kaggle.com/) account, join the [competition](https://inclass.kaggle.com/c/dat8-stack-overflow) using the invitation link, download the sample submission, and then submit the sample submission (which will require SMS account verification).
