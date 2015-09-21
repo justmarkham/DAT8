@@ -445,6 +445,25 @@ print train_test_rmse(['temp', 'season_2', 'season_3', 'season_4', 'humidity'])
 # 
 # Then, try using each of the three features (on its own) with `train_test_rmse` to see which one performs the best!
 
+# hour as a numeric feature
+bikes['hour'] = bikes.index.hour
+
+
+# hour as a categorical feature
+hour_dummies = pd.get_dummies(bikes.hour, prefix='hour')
+hour_dummies.drop(hour_dummies.columns[0], axis=1, inplace=True)
+bikes = pd.concat([bikes, hour_dummies], axis=1)
+
+
+# daytime as a categorical feature
+bikes['daytime'] = ((bikes.hour > 6) & (bikes.hour < 21)).astype(int)
+
+
+print train_test_rmse(['hour'])
+print train_test_rmse(bikes.columns[bikes.columns.str.startswith('hour_')])
+print train_test_rmse(['daytime'])
+
+
 # ## Comparing linear regression with other models
 # 
 # Advantages of linear regression:
