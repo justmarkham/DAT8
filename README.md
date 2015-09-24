@@ -4,6 +4,8 @@ Course materials for [General Assembly's Data Science course](https://generalass
 
 **Instructor:** [Kevin Markham](http://www.dataschool.io/about/)
 
+[![Binder](http://mybinder.org/badge.svg)](http://mybinder.org/repo/justmarkham/DAT8)
+
 ### [Course Project](project/README.md)
 
 Tuesday | Thursday
