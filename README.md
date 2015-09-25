@@ -53,6 +53,8 @@ Tuesday | Thursday
 
 ### [Comparison of machine learning models](other/model_comparison.md)
 
+### [Comparison of model evaluation procedures and metrics](other/model_evaluation_comparison.md)
+
 -----
 
 ### Class 1: Introduction to Data Science
@@ -350,8 +352,6 @@ Tuesday | Thursday
 * My [simple guide to confusion matrix terminology](http://www.dataschool.io/simple-guide-to-confusion-matrix-terminology/) may be useful to you as a reference.
 * This notebook (from another DAT course) explains [how to calculate "expected value"](https://github.com/podopie/DAT18NYC/blob/master/classes/13-expected_value_cost_benefit_analysis.ipynb) from a confusion matrix by treating it as a cost-benefit matrix.
 
-<!--
-
 -----
 
 ### Class 13: Advanced Model Evaluation
@@ -415,6 +415,8 @@ Tuesday | Thursday
 * Andrew Ng has a [paper](https://cs.stanford.edu/people/ang//papers/nips01-discriminativegenerative.pdf) comparing the performance of logistic regression and Naive Bayes across a variety of datasets.
 * If you enjoyed Paul Graham's article, you can read [his follow-up article](http://www.paulgraham.com/better.html) on how he improved his spam filter and this [related paper](http://www.merl.com/publications/docs/TR2004-091.pdf) about state-of-the-art spam filtering in 2004.
 * Yelp has found that Naive Bayes is more effective than Mechanical Turks at [categorizing businesses](http://engineeringblog.yelp.com/2011/02/towards-building-a-high-quality-workforce-with-mechanical-turk.html).
+
+<!--
 
 -----
 

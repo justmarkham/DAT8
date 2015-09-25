@@ -50,3 +50,21 @@
 - Presumes a linear relationship between the features and the log-odds of the response
 - Performance is (generally) not competitive with the best supervised learning methods
 - Can't automatically learn feature interactions
+
+## Naive Bayes
+
+**Advantages:**
+
+- Model training and prediction are very fast
+- Somewhat interpretable
+- No tuning is required
+- Features don't need scaling
+- Insensitive to irrelevant features (with enough observations)
+- Performs better than logistic regression when the training set is very small
+
+**Disadvantages:**
+
+- Predicted probabilities are not well-calibrated
+- Correlated features can be problematic (due to the independence assumption)
+- Can't handle negative features (with Multinomial Naive Bayes)
+- Has a higher "asymptotic error" than logistic regression
