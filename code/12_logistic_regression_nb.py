@@ -32,7 +32,6 @@ glass.head()
 
 import seaborn as sns
 import matplotlib.pyplot as plt
-get_ipython().magic(u'matplotlib inline')
 sns.set(font_scale=1.5)
 
 

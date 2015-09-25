@@ -95,7 +95,6 @@ y_pred_prob = logreg.predict_proba(X_test)[:, 1]
 
 
 # histogram of predicted probabilities
-get_ipython().magic(u'matplotlib inline')
 import matplotlib.pyplot as plt
 plt.hist(y_pred_prob)
 plt.xlim(0, 1)
