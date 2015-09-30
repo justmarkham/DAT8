@@ -21,6 +21,7 @@
 import pandas as pd
 url = 'https://raw.githubusercontent.com/justmarkham/DAT8/master/data/titanic.csv'
 titanic = pd.read_csv(url, index_col='PassengerId')
+titanic.shape
 
 
 # check for missing values
@@ -48,7 +49,7 @@ titanic.Age.median()
 
 
 # most frequent Age
-titanic.Age.value_counts().head(1).index
+titanic.Age.mode()
 
 
 # fill missing values for Age with the median age
@@ -75,7 +76,7 @@ titanic.head(10)
 titanic['Sex_Female'] = titanic.Sex.map({'male':0, 'female':1})
 
 
-# create a DataFrame of dummy variables
+# create a DataFrame of dummy variables for Embarked
 embarked_dummies = pd.get_dummies(titanic.Embarked, prefix='Embarked')
 embarked_dummies.drop(embarked_dummies.columns[0], axis=1, inplace=True)
 
@@ -120,6 +121,8 @@ y_pred_prob = logreg.predict_proba(X_test)[:, 1]
 
 
 import matplotlib.pyplot as plt
+plt.rcParams['figure.figsize'] = (8, 6)
+plt.rcParams['font.size'] = 14
 
 
 # plot ROC curve
