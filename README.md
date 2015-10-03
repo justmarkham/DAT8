@@ -151,7 +151,7 @@ Tuesday | Thursday
 ### Class 5: Visualization
 * Python homework with the Chipotle data due ([solution](code/03_python_homework_chipotle.py), [detailed explanation](notebooks/03_python_homework_chipotle_explained.ipynb))
 * Part 2 of Exploratory Data Analysis with Pandas ([code](code/04_pandas.py))
-* Visualization with Pandas and Matplotlib ([code](code/05_pandas_visualization.py), [notebook](notebooks/05_pandas_visualization.ipynb))
+* Visualization with Pandas and Matplotlib ([notebook](notebooks/05_pandas_visualization.ipynb))
 
 **Homework:**
 * Your project question write-up is due on Thursday.
@@ -177,7 +177,7 @@ Tuesday | Thursday
 -----
 
 ### Class 6: Machine Learning
-* Part 2 of Visualization with Pandas and Matplotlib ([code](code/05_pandas_visualization.py), [notebook](notebooks/05_pandas_visualization.ipynb))
+* Part 2 of Visualization with Pandas and Matplotlib ([notebook](notebooks/05_pandas_visualization.ipynb))
 * Brief introduction to the Jupyter/IPython Notebook
 * "Human learning" exercise:
     * [Iris dataset](http://archive.ics.uci.edu/ml/datasets/Iris) hosted by the UCI Machine Learning Repository
