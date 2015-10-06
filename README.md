@@ -419,7 +419,7 @@ Tuesday | Thursday
 -----
 
 ### Class 15: Natural Language Processing
-* Yelp review text homework due (solution)
+* Yelp review text homework due ([solution](notebooks/14_yelp_review_text_homework.ipynb))
 * Natural language processing ([notebook](notebooks/15_natural_language_processing.ipynb))
 * Introduction to our [Kaggle competition](https://inclass.kaggle.com/c/dat8-stack-overflow)
     * Create a Kaggle account, join the competition using the invitation link, download the sample submission, and then submit the sample submission (which will require SMS account verification).
