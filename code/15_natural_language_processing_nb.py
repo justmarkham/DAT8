@@ -30,6 +30,7 @@
 #     - [autotldr](https://www.reddit.com/r/technology/comments/35brc8/21_million_people_still_use_aol_dialup/cr2zzj0)
 # - **Natural Language Generation**: Generate text from data
 #     - [How a computer describes a sports match](http://www.bbc.com/news/technology-34204052)
+#     - [Publishers withdraw more than 120 gibberish papers](http://www.nature.com/news/publishers-withdraw-more-than-120-gibberish-papers-1.14763)
 # - **Speech recognition and generation**: Speech-to-text, text-to-speech
 #     - [Google's Web Speech API demo](https://www.google.com/intl/en/chrome/demos/speech.html)
 #     - [Vocalware Text-to-Speech demo](https://www.vocalware.com/index/demo)
@@ -166,10 +167,10 @@ print metrics.accuracy_score(y_test, y_pred_class)
 
 # calculate null accuracy
 y_test_binary = np.where(y_test==5, 1, 0)
-y_test_binary.mean()
+max(y_test_binary.mean(), 1 - y_test_binary.mean())
 
 
-# define a function that accepts a vectorizer and returns the accuracy
+# define a function that accepts a vectorizer and calculates the accuracy
 def tokenize_test(vect):
     X_train_dtm = vect.fit_transform(X_train)
     print 'Features: ', X_train_dtm.shape[1]
@@ -298,7 +299,7 @@ def split_into_lemmas(text):
     return [word.lemmatize() for word in words]
 
 
-# use split_into_lemmas as the feature extraction function
+# use split_into_lemmas as the feature extraction function (WARNING: SLOW!)
 vect = CountVectorizer(analyzer=split_into_lemmas)
 tokenize_test(vect)
 
@@ -409,7 +410,7 @@ def detect_sentiment(text):
 yelp['sentiment'] = yelp.text.apply(detect_sentiment)
 
 
-# boxplot of sentiment grouped by stars
+# box plot of sentiment grouped by stars
 yelp.boxplot(column='sentiment', by='stars')
 
 
