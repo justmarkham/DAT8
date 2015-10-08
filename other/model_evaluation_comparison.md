@@ -41,6 +41,10 @@
 - Still useful when there is high class imbalance (unlike classification accuracy/error)
 - Harder to use when there are more than two response classes
 
+**Log loss**
+
+- Most useful when well-calibrated predicted probabilities are important to your business objective
+
 ## Comparing Evaluation Metrics for Regression Problems
 
 **Mean Absolute Error (MAE)**
