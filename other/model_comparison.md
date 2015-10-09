@@ -68,3 +68,40 @@
 - Correlated features can be problematic (due to the independence assumption)
 - Can't handle negative features (with Multinomial Naive Bayes)
 - Has a higher "asymptotic error" than logistic regression
+
+## Decision Trees
+
+**Advantages:**
+
+- Can be used for regression or classification
+- Can be displayed graphically
+- Highly interpretable
+- Can be specified as a series of rules, and more closely approximate human decision-making than other models
+- Prediction is fast
+- Features don't need scaling
+- Automatically learns feature interactions
+- Tends to ignore irrelevant features
+- Non-parametric (will outperform linear models if relationship between features and response is highly non-linear)
+
+**Disadvantages:**
+
+- Performance is (generally) not competitive with the best supervised learning methods
+- Can easily overfit the training data (tuning is required)
+- Small variations in the data can result in a completely different tree (high variance)
+- Recursive binary splitting makes "locally optimal" decisions that may not result in a globally optimal tree
+- Doesn't tend to work well if the classes are highly unbalanced
+- Doesn't tend to work well with very small datasets
+
+## Random Forests
+
+**Advantages (compared to decision trees):**
+
+- Performance is competitive with the best supervised learning methods
+- Provides a more reliable estimate of feature importance
+- Allows you to estimate out-of-sample error without using train/test split or cross-validation
+
+**Disadvantages (compared to decision trees):**
+
+- Less interpretable
+- Slower to train
+- Slower to predict
