@@ -449,6 +449,8 @@ Tuesday | Thursday
 ### Class 16: Kaggle Competition
 * Overview of how Kaggle works ([slides](slides/16_kaggle.pdf))
 * Kaggle In-Class competition: [Predict whether a Stack Overflow question will be closed](https://inclass.kaggle.com/c/dat8-stack-overflow)
+    * [Complete code file](code/16_kaggle.py)
+    * [Minimal code file](code/16_kaggle_minimal.py): excludes all exploratory code
     * [Explanations of log loss](http://www.quora.com/What-is-an-intuitive-explanation-for-the-log-loss-function)
 
 **Homework:**
