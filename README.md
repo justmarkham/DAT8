@@ -19,8 +19,8 @@ Tuesday | Thursday
 9/29: Advanced Model Evaluation | 10/1: Naive Bayes and Text Data
 10/6: Natural Language Processing | 10/8: Kaggle Competition, **Draft Paper Due**
 10/13: Decision Trees | 10/15: Ensembling
-10/20: Regularization and<br>Clustering, **Peer Review Due** | 10/22: Course Review and Bonus Topics
-10/27: Bonus Topics and<br>**Final Project Presentation** | 10/29: **Final Project Presentation**
+10/20: Clustering and Advanced<br>scikit-learn, **Peer Review Due** | 10/22: Regularization and<br>Regular Expressions
+10/27: Course Review and<br>**Final Project Presentation** | 10/29: **Final Project Presentation**
 
 <!--
 ### Before the Course Begins
@@ -508,7 +508,7 @@ Tuesday | Thursday
 
 -----
 
-### Class 19: Advanced scikit-learn and Clustering
+### Class 19: Clustering and Advanced scikit-learn
 * Advanced scikit-learn ([code](code/19_advanced_sklearn.py))
     * [GridSearchCV](http://scikit-learn.org/stable/modules/grid_search.html): searching for optimal parameters ([exercise](code/19_grid_exercise.py))
     * [StandardScaler](http://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html): standardization of features
@@ -516,9 +516,6 @@ Tuesday | Thursday
 * Clustering ([slides](slides/19_clustering.pdf), [code](code/19_clustering.py))
     * K-means: [visualization](http://www.naftaliharris.com/blog/visualizing-k-means-clustering/)
     * DBSCAN: [visualization](http://www.naftaliharris.com/blog/visualizing-dbscan-clustering/)
-
-**Homework:**
-* **Optional:** Read this classic paper, which may help you to connect many of the topics we have studied throughout the course: [A Few Useful Things to Know about Machine Learning](http://homes.cs.washington.edu/~pedrod/papers/cacm12.pdf).
 
 **scikit-learn Resources:**
 * For a recap of today's lesson on GridSearchCV, plus a comparison with RandomizedSearchCV, watch [How to find the best model parameters in scikit-learn](https://www.youtube.com/watch?v=Gol_qOgRqfA&list=PL5-da3qGB5ICeMbQuqbbCOQWcS6OYBr5A&index=8) (28 minutes) or read through the [companion notebook](https://github.com/justmarkham/scikit-learn-videos/blob/master/08_grid_search.ipynb).
@@ -534,12 +531,19 @@ Tuesday | Thursday
 
 -----
 
-### Class 20: Course Review
-* [Data science review](https://docs.google.com/document/d/1pwSGwz5lDeQMNheTOacKptusW2Q6gQ5uTiu5EkKicmk/edit?usp=sharing)
-* [Comparing supervised learning algorithms](https://docs.google.com/spreadsheets/d/1tne8UpZwJkvHy7C7NPxjCsF5mFm5mENP2AQ9OS7w3no/edit?usp=sharing) ([related blog post](http://www.dataschool.io/comparing-supervised-learning-algorithms/))
+### Class 20: Regularization and Regular Expressions
 
 **Homework:**
 * Your final project is due next week!
+* **Optional:** Make your final submissions to our Kaggle competition! It closes at 6:30pm ET on Tuesday 10/27.
+* **Optional:** Read this classic paper, which may help you to connect many of the topics we have studied throughout the course: [A Few Useful Things to Know about Machine Learning](http://homes.cs.washington.edu/~pedrod/papers/cacm12.pdf).
+
+-----
+
+### Class 21: Course Review and Final Project Presentation
+* [Data science review](https://docs.google.com/document/d/1pwSGwz5lDeQMNheTOacKptusW2Q6gQ5uTiu5EkKicmk/edit?usp=sharing)
+* [Comparing supervised learning algorithms](https://docs.google.com/spreadsheets/d/1tne8UpZwJkvHy7C7NPxjCsF5mFm5mENP2AQ9OS7w3no/edit?usp=sharing) ([related blog post](http://www.dataschool.io/comparing-supervised-learning-algorithms/))
+* Project presentations!
 
 **Resources:**
 * scikit-learn's [machine learning map](http://scikit-learn.org/stable/tutorial/machine_learning_map/) may help you to choose the "best" model for your task.
@@ -550,7 +554,7 @@ Tuesday | Thursday
 
 -----
 
-### Classes 21 and 22: Final Project Presentation
+### Class 22: Final Project Presentation
 * Project presentations!
 
 -----
