@@ -10,14 +10,14 @@ Course materials for [General Assembly's Data Science course](https://generalass
 
 Tuesday | Thursday
 --- | ---
-8/18: Introduction to Data Science | 8/20: Command Line and Version Control
+8/18: Introduction to Data Science | 8/20: Command Line and<br>Version Control
 8/25: Data Reading and Cleaning | 8/27: Exploratory Data Analysis
 9/1: Visualization<br>**Project Discussion Deadline** | 9/3: Machine Learning<br>**Project Question and Dataset Due**
 9/8: Getting Data | 9/10: K-Nearest Neighbors
 9/15: Basic Model Evaluation | 9/17: Linear Regression
 9/22: **First Project Presentation** | 9/24: Logistic Regression
 9/29: Advanced Model Evaluation | 10/1: Naive Bayes and Text Data
-10/6: Natural Language Processing | 10/8: Kaggle Competition, **Draft Paper Due**
+10/6: Natural Language Processing | 10/8: Kaggle Competition<br>**Draft Paper Due**
 10/13: Decision Trees | 10/15: Ensembling
 10/20: Clustering and Advanced<br>scikit-learn, **Peer Review Due** | 10/22: Regularization and<br>Regular Expressions
 10/27: Course Review and<br>**Final Project Presentation** | 10/29: **Final Project Presentation**
