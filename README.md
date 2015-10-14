@@ -19,7 +19,7 @@ Tuesday | Thursday
 9/29: Advanced Model Evaluation | 10/1: Naive Bayes and Text Data
 10/6: Natural Language Processing | 10/8: Kaggle Competition<br>**Draft Paper Due**
 10/13: Decision Trees | 10/15: Ensembling
-10/20: Clustering and Advanced<br>scikit-learn, **Peer Review Due** | 10/22: Regularization and<br>Regular Expressions
+10/20: Advanced scikit-learn and<br>Clustering, **Peer Review Due** | 10/22: Regularization and<br>Regular Expressions
 10/27: Course Review and<br>**Final Project Presentation** | 10/29: **Final Project Presentation**
 
 <!--
@@ -387,6 +387,7 @@ Tuesday | Thursday
 **Other Resources:**
 * scikit-learn has extensive documentation on [model evaluation](http://scikit-learn.org/stable/modules/model_evaluation.html).
 * [Counterfactual evaluation of machine learning models](https://www.youtube.com/watch?v=QWCSxAKR-h0) (45 minutes) is an excellent talk about the sophisticated way in which Stripe evaluates its fraud detection model. (These are the associated [slides](http://www.slideshare.net/MichaelManapat/counterfactual-evaluation-of-machine-learning-models).)
+* [Visualizing Machine Learning Thresholds to Make Better Business Decisions](http://blog.insightdatalabs.com/visualizing-classifier-thresholds/) demonstrates how visualizing precision, recall, and "queue rate" at different thresholds can help you to maximize the business value of your classifier.
 
 -----
 
@@ -508,25 +509,30 @@ Tuesday | Thursday
 
 -----
 
-### Class 19: Clustering and Advanced scikit-learn
-* Advanced scikit-learn ([code](code/19_advanced_sklearn.py))
-    * [GridSearchCV](http://scikit-learn.org/stable/modules/grid_search.html): searching for optimal parameters ([exercise](code/19_grid_exercise.py))
-    * [StandardScaler](http://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html): standardization of features
+### Class 19: Advanced scikit-learn and Clustering
+* Advanced scikit-learn ([notebook](notebooks/19_advanced_sklearn.ipynb))
+    * [StandardScaler](http://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html): standardizing features
     * [Pipeline](http://scikit-learn.org/stable/modules/pipeline.html): chaining steps
-* Clustering ([slides](slides/19_clustering.pdf), [code](code/19_clustering.py))
-    * K-means: [visualization](http://www.naftaliharris.com/blog/visualizing-k-means-clustering/)
-    * DBSCAN: [visualization](http://www.naftaliharris.com/blog/visualizing-dbscan-clustering/)
+* Clustering ([slides](slides/19_clustering.pdf), [notebook](notebooks/19_clustering.ipynb))
+    * K-means: [documentation](http://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html), [visualization 1](http://tech.nitoyon.com/en/blog/2013/11/07/k-means/), [visualization 2](http://www.naftaliharris.com/blog/visualizing-k-means-clustering/)
+    * DBSCAN: [documentation](http://scikit-learn.org/stable/modules/generated/sklearn.cluster.DBSCAN.html), [visualization](http://www.naftaliharris.com/blog/visualizing-dbscan-clustering/)
 
 **scikit-learn Resources:**
-* For a recap of today's lesson on GridSearchCV, plus a comparison with RandomizedSearchCV, watch [How to find the best model parameters in scikit-learn](https://www.youtube.com/watch?v=Gol_qOgRqfA&list=PL5-da3qGB5ICeMbQuqbbCOQWcS6OYBr5A&index=8) (28 minutes) or read through the [companion notebook](https://github.com/justmarkham/scikit-learn-videos/blob/master/08_grid_search.ipynb).
-* Here is a longer example of [feature scaling](https://github.com/rasbt/pattern_classification/blob/master/preprocessing/about_standardization_normalization.ipynb) in scikit-learn, with additional discussion of the types of scaling you can use.
-* [Practical Data Science in Python](http://radimrehurek.com/data_science_python/) is a long and well-written notebook that includes the use of scikit-learn's Pipeline.
+* This is a longer example of [feature scaling](https://github.com/rasbt/pattern_classification/blob/master/preprocessing/about_standardization_normalization.ipynb) in scikit-learn, with additional discussion of the types of scaling you can use.
+* [Practical Data Science in Python](http://radimrehurek.com/data_science_python/) is a long and well-written notebook that includes scikit-learn pipelining, plotting a learning curve, and pickling a model.
+* To learn how to use [GridSearchCV and RandomizedSearchCV](http://scikit-learn.org/stable/modules/grid_search.html) for parameter tuning, watch [How to find the best model parameters in scikit-learn](https://www.youtube.com/watch?v=Gol_qOgRqfA) (28 minutes) or read the [associated notebook](https://github.com/justmarkham/scikit-learn-videos/blob/master/08_grid_search.ipynb).
+* Sebastian Raschka has a number of excellent resources for scikit-learn users, including a repository of [tutorials and examples](https://github.com/rasbt/pattern_classification), a library of machine learning [tools and extensions](http://rasbt.github.io/mlxtend/), a new [book](https://github.com/rasbt/python-machine-learning-book), and a semi-active [blog](http://sebastianraschka.com/blog/).
 * scikit-learn has an incredibly active [mailing list](https://www.mail-archive.com/scikit-learn-general@lists.sourceforge.net/index.html) that is often much more useful than Stack Overflow for researching a particular function.
+* If you forget how to use a particular function in scikit-learn, don't forget that this repository is fully searchable!
 
 **Clustering Resources:**
-* scikit-learn's documentation on [clustering](http://scikit-learn.org/stable/modules/clustering.html) compares many different types of clustering.
 * For a very thorough introduction to clustering, read chapter 8 (69 pages) of [Introduction to Data Mining](http://www-users.cs.umn.edu/~kumar/dmbook/index.php) (available as a free download), or browse through the chapter 8 slides.
+* scikit-learn's user guide compares many different [types of clustering](http://scikit-learn.org/stable/modules/clustering.html).
+* This [PowerPoint presentation](http://www2.research.att.com/~volinsky/DataMining/Columbia2011/Slides/Topic6-Clustering.ppt) from Columbia's Data Mining class provides a good introduction to clustering, including hierarchical clustering and alternative distance metrics.
 * An Introduction to Statistical Learning has useful videos on [K-means clustering](https://www.youtube.com/watch?v=aIybuNt9ps4&list=PL5-da3qGB5IBC-MneTc9oBZz0C6kNJ-f2) (17 minutes) and [hierarchical clustering](https://www.youtube.com/watch?v=Tuuc9Y06tAc&list=PL5-da3qGB5IBC-MneTc9oBZz0C6kNJ-f2) (15 minutes).
+* This is an excellent interactive visualization of [hierarchical clustering](https://joyofdata.shinyapps.io/hclust-shiny/).
+* This is a nice animated explanation of [mean shift clustering](http://spin.atomicobject.com/2015/05/26/mean-shift-clustering/).
+* The [K-modes algorithm](http://www.cs.ust.hk/~qyang/Teaching/537/Papers/huang98extensions.pdf) can be used for clustering datasets of categorical features without converting them to numerical values.
 * Fun examples of clustering: [A Statistical Analysis of the Work of Bob Ross](http://fivethirtyeight.com/features/a-statistical-analysis-of-the-work-of-bob-ross/) (with [data and Python code](https://github.com/fivethirtyeight/data/tree/master/bob-ross)), [How a Math Genius Hacked OkCupid to Find True Love](http://www.wired.com/2014/01/how-to-hack-okcupid/all/), and [characteristics of your zip code](http://www.esri.com/landing-pages/tapestry/).
 
 -----
