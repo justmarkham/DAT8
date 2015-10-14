@@ -163,15 +163,25 @@ plt.ylabel('RMSE (lower is better)')
 # ## Building a regression tree in scikit-learn
 
 # encode car as 0 and truck as 1
+train['vtype'] = train.vtype.map({'car':0, 'truck':1})
 
 
 # define X and y
+feature_cols = ['year', 'miles', 'doors', 'vtype']
+X = train[feature_cols]
+y = train.price
 
 
 # instantiate a DecisionTreeRegressor (with random_state=1)
+from sklearn.tree import DecisionTreeRegressor
+treereg = DecisionTreeRegressor(random_state=1)
+treereg
 
 
 # use leave-one-out cross-validation (LOOCV) to estimate the RMSE for this model
+from sklearn.cross_validation import cross_val_score
+scores = cross_val_score(treereg, X, y, cv=14, scoring='mean_squared_error')
+np.mean(np.sqrt(-scores))
 
 
 # ## What happens when we grow a tree too deep?
@@ -250,17 +260,30 @@ export_graphviz(treereg, out_file='tree_vehicles.dot', feature_names=feature_col
 # ## Making predictions for the testing data
 
 # read the testing data
+url = 'https://raw.githubusercontent.com/justmarkham/DAT8/master/data/vehicles_test.csv'
+test = pd.read_csv(url)
+test['vtype'] = test.vtype.map({'car':0, 'truck':1})
+test
 
 
 # **Question:** Using the tree diagram above, what predictions will the model make for each observation?
 
 # use fitted model to make predictions on testing data
+X_test = test[feature_cols]
+y_test = test.price
+y_pred = treereg.predict(X_test)
+y_pred
 
 
 # calculate RMSE
+np.sqrt(metrics.mean_squared_error(y_test, y_pred))
 
 
 # calculate RMSE for your own tree!
+y_test = [3000, 6000, 12000]
+y_pred = [0, 0, 0]
+from sklearn import metrics
+np.sqrt(metrics.mean_squared_error(y_test, y_pred))
 
 
 # # Part 2: Classification trees
