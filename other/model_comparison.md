@@ -105,3 +105,17 @@
 - Less interpretable
 - Slower to train
 - Slower to predict
+
+## Regularized Linear Models
+
+**Advantages (compared to unregularized linear models):**
+
+- Better performance
+- L1 regularization performs automatic feature selection
+- Useful for high-dimensional problems (p > n)
+
+**Disadvantages (compared to unregularized linear models):**
+
+- Tuning is required
+- Feature scaling is recommended
+- Less interpretable (due to feature scaling)
