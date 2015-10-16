@@ -22,7 +22,7 @@
 
 # # Part 1: Introduction
 # 
-# Let's pretend that instead of building a single model to solve a classification problem, you created **five independent models**, and each model was correct about 70% of the time. If you combined these models into an "ensemble" and used their majority vote as a prediction, how often would the ensemble be correct?
+# Let's pretend that instead of building a single model to solve a binary classification problem, you created **five independent models**, and each model was correct about 70% of the time. If you combined these models into an "ensemble" and used their majority vote as a prediction, how often would the ensemble be correct?
 
 import numpy as np
 
@@ -105,12 +105,12 @@ print ensemble_preds.mean()
 
 # ## Comparing manual ensembling with a single model approach
 # 
-# **Advantages of ensembling:**
+# **Advantages of manual ensembling:**
 # 
 # - Increases predictive accuracy
 # - Easy to get started
 # 
-# **Disadvantages of ensembling:**
+# **Disadvantages of manual ensembling:**
 # 
 # - Decreases interpretability
 # - Takes longer to train
@@ -143,7 +143,7 @@ print np.random.choice(a=nums, size=20, replace=True)
 # 2. Train each tree on its bootstrap sample and make predictions.
 # 3. Combine the predictions:
 #     - Average the predictions for **regression trees**
-#     - Take a majority vote for **classification trees**
+#     - Take a vote for **classification trees**
 # 
 # Notes:
 # 
@@ -263,7 +263,7 @@ for sample in samples:
 
 # How to calculate **"out-of-bag error":**
 # 
-# 1. For every observation in the training data, predict its response value using **only** the trees in which that observation was out-of-bag. Average those predictions (for regression) or take a majority vote (for classification).
+# 1. For every observation in the training data, predict its response value using **only** the trees in which that observation was out-of-bag. Average those predictions (for regression) or take a vote (for classification).
 # 2. Compare all predictions to the actual response values in order to compute the out-of-bag error.
 # 
 # When B is sufficiently large, the **out-of-bag error** is an accurate estimate of **out-of-sample error**.
