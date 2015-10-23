@@ -57,7 +57,7 @@ Tuesday | Thursday
 
 ### [Advice for getting better at data science](other/advice.md)
 
-### [Additional resources](#additional-resources)
+### [Additional resources](#additional-resources-1)
 
 -----
 
