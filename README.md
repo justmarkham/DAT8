@@ -555,7 +555,7 @@ Tuesday | Thursday
     * [Baltimore homicide data](data/homicides.txt)
     * [Regular expressions 101](https://regex101.com/#python): real-time testing of regular expressions
     * [Reference guide](code/20_regex_reference.py)
-    * Exercise
+    * [Exercise](code/20_regex_exercise.py)
 
 **Homework:**
 * Your final project is due next week!
