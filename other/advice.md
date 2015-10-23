@@ -1,0 +1,38 @@
+## What's Next?
+
+Here is my best advice for **getting better at data science**: Find "the thing" that motivates you to practice what you learned and to learn more, and then do that thing. That could be personal data science projects, Kaggle competitions, online courses, reading books, reading blogs, attending meetups or conferences, or something else.
+
+If you create your own **data science projects**, I'd encourage you to share them on GitHub and include writeups. That will help to show others that you know how to do [proper data science](http://simplystatistics.org/2015/03/17/data-science-done-well-looks-easy-and-that-is-a-big-problem-for-data-scientists/).
+
+**Kaggle competitions** are a great way to practice data science without coming up with the problem yourself. Don't worry about how high you place, just focus on learning something new with every competition. Spend as much time as possible reading the forums, because you'll learn a lot, but don't spend time in the forums at the expense of working on the competition yourself. Also, keep in mind that you won't be practicing important parts of the data science workflow, namely generating questions, gathering data, and communicating results.
+
+There are many **online courses** to consider, and new ones being created all the time:
+
+* Coursera's [Data Science Specialization](https://www.coursera.org/specialization/jhudatascience/1) is 9 courses, plus a capstone project. There is a lot of overlap with General Assembly's course, and course quality varies, but you would definitely learn a lot of R.
+* Coursera's [Machine Learning](https://www.coursera.org/learn/machine-learning/) is Andrew Ng's highly regarded course. It goes deeper into many topics we covered, and covers many topics we didn't. Keep in mind that it focuses only on machine learning (not the entire data science workflow), the programming assignments use MATLAB/Octave, and it requires some understanding of linear algebra. Browse these [lecture notes](http://www.holehouse.org/mlclass/) (compiled by a student) for a preview of the course.
+* Stanford's [Statistical Learning](http://online.stanford.edu/course/statistical-learning) also covers some topics that we did not. It focuses on teaching machine learning at a conceptual (rather than mathematical) level, when possible. The course may be offered again in 2016, but the real gem from the course is the book and videos (linked below).
+* Caltech's [Learning from Data](http://work.caltech.edu/telecourse.html) teaches machine learning at a theoretical and conceptual level. The lectures and slides are excellent. The homework assignments are not interactive, and the course does not use a specific programming language.
+* Udacity's [Data Analyst Nanodegree](https://www.udacity.com/course/data-analyst-nanodegree--nd002) looks promising, but I don't know anyone who has done it.
+* Thinkful's [Data Science in Python](https://www.thinkful.com/courses/learn-data-science-online/) course or SlideRule's [Data Science Intensive](https://www.mysliderule.com/workshops/data-science-intensive) may be a good way to practice our course material with guidance from an expert mentor.
+* [Dataquest](https://www.dataquest.io) is an online platform rather than a traditional course, and allows you to learn and practice data science through interactive exercises. Not all of the lessons are free, but new lessons are frequently being added.
+* edX's [Introduction to Computer Science and Programming Using Python](https://www.edx.org/course/introduction-computer-science-mitx-6-00-1x7) is apparently an excellent course if you want to get better at programming in Python.
+* Coursera recently added many other data science-related [specializations and courses](https://www.coursera.org/browse/data-science?languages=en), most of which I am not familiar with. However, [CourseTalk](https://www.coursetalk.com/) is useful for reading reviews of online courses.
+* Some additional courses are listed in the [Additional Resources](../README.md#additional-resources) section of the main README.
+
+Here is just a tiny selection of **books**:
+* [An Introduction to Statistical Learning with Applications in R](http://www-bcf.usc.edu/~gareth/ISL/) is my favorite book on machine learning because of the thoughtful way in which the material is presented. The Statistical Learning course linked above uses it as the course textbook, and the [related videos](http://www.dataschool.io/15-hours-of-expert-machine-learning-videos/) are available on YouTube.
+* [Elements of Statistical Learning](http://statweb.stanford.edu/~tibs/ElemStatLearn/) is by the same authors. It covers a wider variety of topics, and in greater mathematical depth.
+* [Python for Data Analysis](http://shop.oreilly.com/product/0636920023784.do) was written by the creator of Pandas, and is especially useful if you want to go deeper into Pandas and NumPy.
+* [Python Machine Learning](https://github.com/rasbt/python-machine-learning-book) came out in September 2015. The author, [Sebastian Raschka](http://sebastianraschka.com/articles.html), is an excellent writer and has a deep understanding of both machine learning and scikit-learn, so I suspect it is worth reading.
+
+There are an overwhelming number of data science **blogs and newsletters**. If you want to read just one site, [DataTau](http://www.datatau.com/news) is the best aggregator. [Data Elixir](http://dataelixir.com/) is the best newsletter, though the [O'Reilly Data Newsletter](http://www.oreilly.com/data/newsletter.html) and [Python Weekly](http://www.pythonweekly.com/) are also good. Other notable blogs include: [no free hunch](http://blog.kaggle.com/) (Kaggle's blog), [The Yhat blog](http://blog.yhathq.com/) (lots of Python and R content), [Practical Business Python](http://pbpython.com/) (accessible Python content), [Simply Statistics](http://simplystatistics.org/) (a bit more academic), [FastML](http://fastml.com/) (machine learning content), [Win-Vector blog](http://www.win-vector.com/blog/) (great data science advice), [FiveThirtyEight](http://fivethirtyeight.com/) (data journalism), and [Data School](http://www.dataschool.io/) (my blog).
+
+If you prefer **podcasts**, I don't have any personal recommendations, though this [list](https://blog.growth.supply/the-7-best-data-science-and-machine-learning-podcasts-e8f0d5a4a419) gives a nice summary of seven data science podcasts that the author recommends.
+
+There are tons of data-related **meetups in DC**, and most of them are organized by Data Community DC. Check out the [calendar](http://www.datacommunitydc.org/calendar/) or just subscribe to their [weekly newsletter](http://www.datacommunitydc.org/newsletter/). [District Data Labs](http://www.districtdatalabs.com/) also offers data science workshops and project opportunities in DC.
+
+Some notable data science **conferences** are [KDD](http://www.kdd.org/), [Strata](http://strataconf.com/), [PyCon](https://us.pycon.org), [PyData](http://pydata.org/), and [SciPy](http://scipy.org/).
+
+If you want to go **full-time** with your data science education, read this [guide to data science bootcamps](http://yet-another-data-blog.blogspot.com/2014/04/data-science-bootcamp-landscape-full.html), and this [other guide](http://www.skilledup.com/articles/list-data-science-bootcamps) which also includes part-time and online programs. Or, check out this massive list of [colleges and universities](http://datascience.community/colleges) with data science-related degrees.
+
+Finally, Dataquest's blog post on [How to actually learn data science](https://www.dataquest.io/blog/how-to-actually-learn-data-science/) has some additional advice that may be useful to you.
