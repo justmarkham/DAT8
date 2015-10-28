@@ -580,7 +580,7 @@ Tuesday | Thursday
 
 ### Class 21: Course Review and Final Project Presentation
 * Project presentations!
-* Data science review
+* [Data science review](https://docs.google.com/document/d/19gBCkmrbMpFFLPX8wa5daMnyl7J5BXhMV8JNJwgp1pk/edit?usp=sharing)
 
 **Resources:**
 * scikit-learn's [machine learning map](http://scikit-learn.org/stable/tutorial/machine_learning_map/) may help you to choose the "best" model for your task.
