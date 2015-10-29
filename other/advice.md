@@ -18,6 +18,7 @@ There are many **online courses** to consider, and new ones being created all th
 * edX's [Introduction to Computer Science and Programming Using Python](https://www.edx.org/course/introduction-computer-science-mitx-6-00-1x7) is apparently an excellent course if you want to get better at programming in Python.
 * Coursera recently added many other data science-related [specializations and courses](https://www.coursera.org/browse/data-science?languages=en), most of which I am not familiar with. However, [CourseTalk](https://www.coursetalk.com/) is useful for reading reviews of online courses.
 * Some additional courses are listed in the [Additional Resources](../README.md#additional-resources-1) section of the main README.
+* I will also be teaching [my own online courses](http://www.dataschool.io/learn/), which will range in level from beginner to advanced. (Subscribe to my [email newsletter](http://www.dataschool.io/subscribe/) to be notified when courses are announced.)
 
 Here is just a tiny selection of **books**:
 * [An Introduction to Statistical Learning with Applications in R](http://www-bcf.usc.edu/~gareth/ISL/) is my favorite book on machine learning because of the thoughtful way in which the material is presented. The Statistical Learning course linked above uses it as the course textbook, and the [related videos](http://www.dataschool.io/15-hours-of-expert-machine-learning-videos/) are available on YouTube.
