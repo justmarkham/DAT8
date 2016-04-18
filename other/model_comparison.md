@@ -1,4 +1,4 @@
-# Comparison of Machine Learning Models
+# Comparison of Machine Learning Models ([table](http://www.dataschool.io/comparing-supervised-learning-algorithms/))
 
 ## K-nearest neighbors (KNN)
 
