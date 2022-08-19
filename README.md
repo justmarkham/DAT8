@@ -44,6 +44,7 @@ Tuesday | Thursday
 * [Python 2.7 Quick Reference](https://github.com/justmarkham/python-reference/blob/master/reference.py): My beginner-oriented guide that demonstrates Python concepts through short, well-commented examples.
 * [Beginner](code/00_python_beginner_workshop.py) and [intermediate](code/00_python_intermediate_workshop.py) workshop code: Useful for review and reference.
 * [Python Tutor](http://pythontutor.com/): Allows you to visualize the execution of Python code.
+* [Scaler Python Tutorial](https://www.scaler.com/topics/python/): A guide to learn Python easily from beginner to advanced level.
 
 <!--
 ### Submission Forms
