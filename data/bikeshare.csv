@@ -1,4 +1,4 @@
-datetime,season,holiday,workingday,weather,temp,atemp,humidity,windspeed,casual,registered,count
+datetime,season,holiday,workingday,weather,temp,atemp,humidity,windspeed,casual,registered
 2011-01-01 00:00:00,1,0,0,1,9.84,14.395,81,0,3,13,16
 2011-01-01 01:00:00,1,0,0,1,9.02,13.635,80,0,8,32,40
 2011-01-01 02:00:00,1,0,0,1,9.02,13.635,80,0,5,27,32
